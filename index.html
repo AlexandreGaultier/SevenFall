@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SevenFall - JDR Médiéval Fantastique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SevenFall</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="regles.html" class="nav-link">Règles</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="personnages.html" class="nav-link">Personnages</a></li>
+                <li><a href="monstres.html" class="nav-link">Monstres</a></li>
+                <li><a href="scenarios.html" class="nav-link">Scénarios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">SevenFall</h1>
+            <p class="hero-subtitle fade-in-delay">Un monde sombre où les humains luttent contre La Brume</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="regles.html" class="btn btn-primary">Découvrir les Règles</a>
+                <a href="scenarios.html" class="btn btn-secondary">Voir les Scénarios</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="leaf leaf-1"></div>
+            <div class="leaf leaf-2"></div>
+            <div class="leaf leaf-3"></div>
+        </div>
+    </section>
+
+    <!-- Présentation du Monde -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Le Monde de SevenFall</h2>
+            <div class="content-card">
+                <p class="lead">
+                    Dans cet univers sombre, les humains apprennent tôt à se battre afin de lutter et coopérer contre la menace commune : <strong>les monstres</strong>.
+                </p>
+                <p>
+                    Les monstres naissent de <strong>La Brume</strong> avec un B majuscule et viennent piller et attaquer les habitants de ce monde avec une cruauté incessante. C'est pour cela que depuis des centaines d'années, les humains se sont rassemblés dans des villages et des villes régis par des <strong>guildes</strong> afin de protéger l'espèce humaine.
+                </p>
+                <p>
+                    Malheureusement, les demandes sont nombreuses et les guildes ont du mal à répondre à toutes les requêtes. C'est pourquoi les plus petits villages ont trouvé d'autres moyens de se défendre ou de repousser les attaques de leurs assaillants.
+                </p>
+                <p>
+                    Certains villages ont la chance d'avoir à disposition des <strong>Shamans</strong>, dignes créateurs d'esprits défensifs, et d'autres ont su trouver une science, ou plutôt une alchimie redoutable : <strong>Les lanternes de cendres</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caractéristiques -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Caractéristiques du Système</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>Combat Tactique</h3>
+                    <p>Système de combat dynamique avec portées, défense et esquive</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎲</div>
+                    <h3>Attributs Variés</h3>
+                    <p>Puissance, Agilité, Vaillance, Instinct et Savoir</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Classes Diverses</h3>
+                    <p>9 classes uniques pour créer votre héros</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👹</div>
+                    <h3>Monstres Légendaires</h3>
+                    <p>Affrontez des créatures redoutables issues de La Brume</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SevenFall</h3>
+                    <p>Un système de JDR médiéval fantastique</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="regles.html">Règles</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="personnages.html">Personnages</a></li>
+                        <li><a href="monstres.html">Monstres</a></li>
+                        <li><a href="scenarios.html">Scénarios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> SevenFall. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contrôle de la musique -->
+    <div class="music-control">
+        <button id="music-toggle" class="music-btn" aria-label="Musique">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+
+    <!-- Audio pour la musique de fond -->
+    <audio id="background-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

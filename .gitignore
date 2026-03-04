@@ -1,0 +1,20 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Fichiers de l'éditeur
+.vscode/
+.idea/
+*.sublime-*
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Fichiers audio (optionnel - décommentez si vous ne voulez pas versionner la musique)
+# music/*.mp3
+# music/*.wav
+# music/*.ogg

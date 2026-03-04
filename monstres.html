@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstres - SevenFall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SevenFall</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="regles.html" class="nav-link">Règles</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="personnages.html" class="nav-link">Personnages</a></li>
+                <li><a href="monstres.html" class="nav-link active">Monstres</a></li>
+                <li><a href="scenarios.html" class="nav-link">Scénarios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 40vh;">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Bestiaire</h1>
+            <p class="hero-subtitle fade-in-delay">Les créatures de La Brume</p>
+        </div>
+    </section>
+
+    <!-- Les Rôde-Pierres -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Les Rôde-Pierres</h2>
+            <div class="content-card">
+                <p class="lead">Humanoïdes rustres, pillards des routes et ruines</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Rôle</th>
+                            <th>HP</th>
+                            <th>Puissance</th>
+                            <th>IA Combat</th>
+                            <th>DEF</th>
+                            <th>Arme / Sort</th>
+                            <th>Armure</th>
+                            <th>Spécial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Rôde-Pierre Briseur</strong></td>
+                            <td>Brute</td>
+                            <td>16</td>
+                            <td>+1</td>
+                            <td>1</td>
+                            <td>+1</td>
+                            <td>Hache 1d8</td>
+                            <td>Cuir</td>
+                            <td>+1 dégât si charge</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rôde-Pierre Guetteur</strong></td>
+                            <td>Tireur</td>
+                            <td>15</td>
+                            <td>+1</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Arc 1d6</td>
+                            <td>Tissu</td>
+                            <td>Ignore -1 distance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rôde-Pierre Porte-Bouclier</strong></td>
+                            <td>Tank</td>
+                            <td>18</td>
+                            <td>+0</td>
+                            <td>0</td>
+                            <td>+2</td>
+                            <td>Masse 1d6 + bouclier lourd</td>
+                            <td>Cuir</td>
+                            <td>Protège 1 allié adjacent</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les Venefils -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Les Venefils</h2>
+            <div class="content-card">
+                <p class="lead">Créatures insectoïdes vivant en meute</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Rôle</th>
+                            <th>HP</th>
+                            <th>Puissance</th>
+                            <th>IA Combat</th>
+                            <th>DEF</th>
+                            <th>Arme / Sort</th>
+                            <th>Armure</th>
+                            <th>Spécial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Venefil Traqueur</strong></td>
+                            <td>Rapide</td>
+                            <td>18</td>
+                            <td>+1</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Dagues 1d4x2</td>
+                            <td>Tissu</td>
+                            <td>Esquive sur 5-6</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Venefil Crache-Venin</strong></td>
+                            <td>DPS</td>
+                            <td>18</td>
+                            <td>+2</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Venin 1d6</td>
+                            <td>Tissu</td>
+                            <td>Poison (1 dégât/tour)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Venefil Gardien</strong></td>
+                            <td>Défense</td>
+                            <td>28</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>+2</td>
+                            <td>Pinces 1d6</td>
+                            <td>Cuir</td>
+                            <td>Riposte si attaqué</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reine Venefil</strong></td>
+                            <td>Boss</td>
+                            <td>64</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>+1</td>
+                            <td>Morsure 1d6 + PUI, Venin 1d6 (9m) + PUI, Pattes pointues 1d8 + PUI</td>
+                            <td>Carapace</td>
+                            <td>Riposte si attaquée (HP < 32), Ponds 2 serviteurs à 40HP et 20HP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les Mortelames -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Les Mortelames</h2>
+            <div class="content-card">
+                <p class="lead">Morts relevés par une magie ancienne</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Rôle</th>
+                            <th>HP</th>
+                            <th>Puissance</th>
+                            <th>IA Combat</th>
+                            <th>DEF</th>
+                            <th>Arme / Sort</th>
+                            <th>Armure</th>
+                            <th>Spécial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mortelame Fendu</strong></td>
+                            <td>DPS</td>
+                            <td>20</td>
+                            <td>+4</td>
+                            <td>1</td>
+                            <td>+2</td>
+                            <td>Épée 1d6</td>
+                            <td>Cotte</td>
+                            <td>Ignore douleur</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mortelame Sentinelle</strong></td>
+                            <td>Tank</td>
+                            <td>24</td>
+                            <td>+2</td>
+                            <td>1</td>
+                            <td>+3</td>
+                            <td>Lance 1d6 + bouclier</td>
+                            <td>Cotte</td>
+                            <td>Défense +1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mortelame Occulte</strong></td>
+                            <td>Mage</td>
+                            <td>16</td>
+                            <td>-1</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Trait magique 1d6</td>
+                            <td>Tissu</td>
+                            <td>+1 dégât sur KO</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les Croc-Noir -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Les Croc-Noir</h2>
+            <div class="content-card">
+                <p class="lead">Bêtes corrompues par la magie</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Rôle</th>
+                            <th>HP</th>
+                            <th>Puissance</th>
+                            <th>IA Combat</th>
+                            <th>DEF</th>
+                            <th>Arme</th>
+                            <th>Armure</th>
+                            <th>Spécial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Croc-Noir Alpha</strong></td>
+                            <td>Chef</td>
+                            <td>22</td>
+                            <td>+4</td>
+                            <td>2</td>
+                            <td>+1</td>
+                            <td>Morsure 1d8</td>
+                            <td>—</td>
+                            <td>Cri : +1 dégâts alliés</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Croc-Noir Chasseur</strong></td>
+                            <td>Rapide</td>
+                            <td>18</td>
+                            <td>+1</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Griffes 1d6</td>
+                            <td>—</td>
+                            <td>Attaque après déplacement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Croc-Noir Broyeur</strong></td>
+                            <td>Brute</td>
+                            <td>26</td>
+                            <td>+4</td>
+                            <td>2</td>
+                            <td>+1</td>
+                            <td>Morsure 1d10</td>
+                            <td>—</td>
+                            <td>Impossible à repousser</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les Arcanéens -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Les Arcanéens</h2>
+            <div class="content-card">
+                <p class="lead">Humanoïdes liés à une magie instable</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Rôle</th>
+                            <th>HP</th>
+                            <th>Puissance</th>
+                            <th>IA Combat</th>
+                            <th>DEF</th>
+                            <th>Sort</th>
+                            <th>Armure</th>
+                            <th>Spécial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Arcanée Fulgur</strong></td>
+                            <td>DPS magique</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Éclair 1d8</td>
+                            <td>Tissu</td>
+                            <td>+1 vs métal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arcanée Voilée</strong></td>
+                            <td>Contrôle</td>
+                            <td>16</td>
+                            <td>-1</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Brume obscure</td>
+                            <td>Tissu</td>
+                            <td>Désavantage ennemi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arcanée Liée</strong></td>
+                            <td>Soutien</td>
+                            <td>18</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>+0</td>
+                            <td>Soin ciblé 1d6</td>
+                            <td>Tissu</td>
+                            <td>+1 soin allié</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SevenFall</h3>
+                    <p>Un système de JDR médiéval fantastique</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="regles.html">Règles</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="personnages.html">Personnages</a></li>
+                        <li><a href="monstres.html">Monstres</a></li>
+                        <li><a href="scenarios.html">Scénarios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> SevenFall. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contrôle de la musique -->
+    <div class="music-control">
+        <button id="music-toggle" class="music-btn" aria-label="Musique">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+
+    <!-- Audio pour la musique de fond -->
+    <audio id="background-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

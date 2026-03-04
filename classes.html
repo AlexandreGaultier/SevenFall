@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - SevenFall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SevenFall</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="regles.html" class="nav-link">Règles</a></li>
+                <li><a href="classes.html" class="nav-link active">Classes</a></li>
+                <li><a href="personnages.html" class="nav-link">Personnages</a></li>
+                <li><a href="monstres.html" class="nav-link">Monstres</a></li>
+                <li><a href="scenarios.html" class="nav-link">Scénarios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 40vh;">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Classes de Personnages</h1>
+            <p class="hero-subtitle fade-in-delay">Choisissez votre destinée</p>
+        </div>
+    </section>
+
+    <!-- Tableau des Classes -->
+    <section class="section">
+        <div class="container">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Classe</th>
+                            <th>PV de base</th>
+                            <th>DEF de base</th>
+                            <th>Armes maîtrisées</th>
+                            <th>Armures maîtrisées</th>
+                            <th>Rôle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tisseur Arcanique</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+0</td>
+                            <td>Serpes, Sorts, Sorts de soin niv. 1</td>
+                            <td>Tissu</td>
+                            <td>DPS magique</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fendeur de Brume</strong></td>
+                            <td>1d8 + 6</td>
+                            <td>+1</td>
+                            <td>Épées, Dague, Hache, arcs, Arbalètes, Rapière, Javelot</td>
+                            <td>Tissu, Cuir + boucliers légers</td>
+                            <td>DPS agile</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lame-Litanie</strong></td>
+                            <td>1d10 + 6</td>
+                            <td>+2</td>
+                            <td>Épées, Masses, Fléau, Lance, Sorts de soins niv. 1</td>
+                            <td>Toutes + boucliers</td>
+                            <td>Tank / support</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marche-Rêve</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+1</td>
+                            <td>Serpes, Sorts, Arc</td>
+                            <td>Tissu, Cuir</td>
+                            <td>Soin / contrôle</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Saccageur</strong></td>
+                            <td>1d10 + 6</td>
+                            <td>+1</td>
+                            <td>Haches, Masse, Fléau, Javelot</td>
+                            <td>Cuir, cotte de mailles</td>
+                            <td>DPS brut</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rôdeur</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+1</td>
+                            <td>Arcs, Javelots, Arbalètes, Épée, Dague, Soins niv. 1</td>
+                            <td>Tissu, Cuir</td>
+                            <td>Distance / soutien</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ombre-Verseur</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+1</td>
+                            <td>Dagues, épées courtes, arbalètes</td>
+                            <td>Tissu, Cuir</td>
+                            <td>DPS furtif</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Forge-Lien</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+0</td>
+                            <td>Bâtons, dagues, marques rituelles</td>
+                            <td>Tissu</td>
+                            <td>Invocateur</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Archiviste Obsidien</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+0</td>
+                            <td>Armes nécromantiques, bâtons, lames</td>
+                            <td>Tissu, Cuir</td>
+                            <td>Débuff / invocation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Voiliste Écarlate</strong></td>
+                            <td>1d4 + 6</td>
+                            <td>+0</td>
+                            <td>Fouets, dagues, épées fines</td>
+                            <td>Tissu</td>
+                            <td>Support / debuff émotionnel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Détails des Classes -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Détails des Classes</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>⚔️ Tisseur Arcanique</h3>
+                    <p>Mage puissant maîtrisant les arcanes. Spécialisé dans les dégâts magiques et les sorts offensifs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🗡️ Fendeur de Brume</h3>
+                    <p>Guerrier agile et polyvalent. Excellent en combat rapproché et à distance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🛡️ Lame-Litanie</h3>
+                    <p>Paladin protecteur. Tank robuste capable de soigner ses alliés.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌿 Marche-Rêve</h3>
+                    <p>Guérisseur mystique. Maître du soin et du contrôle de bataille.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>⚒️ Saccageur</h3>
+                    <p>Berserker destructeur. DPS brutale avec une rage dévastatrice.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🏹 Rôdeur</h3>
+                    <p>Archer polyvalent. Combattant à distance avec des capacités de soutien.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌑 Ombre-Verseur</h3>
+                    <p>Assassin furtif. DPS discret et mortel.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔗 Forge-Lien</h3>
+                    <p>Invocateur mystique. Contrôle le champ de bataille avec ses invocations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📜 Archiviste Obsidien</h3>
+                    <p>Nécromancien. Débuffs et invocations de morts-vivants.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎭 Voiliste Écarlate</h3>
+                    <p>Manipulateur émotionnel. Support avec debuffs psychologiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SevenFall</h3>
+                    <p>Un système de JDR médiéval fantastique</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="regles.html">Règles</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="personnages.html">Personnages</a></li>
+                        <li><a href="monstres.html">Monstres</a></li>
+                        <li><a href="scenarios.html">Scénarios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> SevenFall. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contrôle de la musique -->
+    <div class="music-control">
+        <button id="music-toggle" class="music-btn" aria-label="Musique">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+
+    <!-- Audio pour la musique de fond -->
+    <audio id="background-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
