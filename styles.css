@@ -31,9 +31,59 @@
     --color-white: #ffffff;
 
     /* Typographie */
-    --font-primary: Lato, sans-serif;
+    /* --font-primary: Lato, sans-serif;
     --font-secondary: Montserrat, sans-serif;
-    --font-tertiary: Text Gyre Termes, sans-serif;
+    --font-tertiary: Text Gyre Termes, sans-serif; */
+    
+    /* OPTION 1 : Polices actuelles (moderne) */
+    /* --font-primary: Lato, sans-serif;
+    --font-secondary: Montserrat, sans-serif;
+    --font-tertiary: Text Gyre Termes, sans-serif; */
+    
+    /* OPTION 2 : Polices médiévales élégantes (Google Fonts) */
+    /* --font-primary: 'Cinzel', serif; 
+    --font-secondary: 'Crimson Text', serif;
+    --font-tertiary: 'Uncial Antiqua', cursive; */
+    
+    /* OPTION 3 : Polices fantastiques modernes */
+    /* --font-primary: 'MedievalSharp', cursive;
+    --font-secondary: 'EB Garamond', serif;
+    --font-tertiary: 'Cinzel Decorative', cursive; */
+    
+    /* OPTION 4 : Polices équilibrées médiéval/fantastique */
+    /* --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Source Serif Pro', serif;
+    --font-tertiary: 'Cinzel', serif; */
+    
+    /* OPTION 5 : Polices avec caractère fort */
+    /* --font-primary: 'Bodoni Moda', serif;
+    --font-secondary: 'Lora', serif;
+    --font-tertiary: 'Cormorant Garamond', serif; */
+    
+    /* OPTION 6 : Polices sobres et raffinées */
+    /* --font-primary: 'Libre Baskerville', serif;
+    --font-secondary: 'Merriweather', serif;
+    --font-tertiary: 'Cormorant', serif; */
+    
+    /* OPTION 7 : Polices avec vibe médiévale douce */
+    /* --font-primary: 'Alegreya', serif;
+    --font-secondary: 'Alegreya Sans', sans-serif;
+    --font-tertiary: 'Alegreya SC', serif; */
+    
+    /* OPTION 8 : Polices fantastiques discrètes */
+    /* --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'PT Serif', serif;
+    --font-tertiary: 'Dancing Script', cursive; */
+    
+    /* OPTION 9 : Polices avec caractère médiéval moderne */
+    --font-primary: 'Oswald', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+    --font-tertiary: 'Playfair Display SC', serif;
+    
+    /* OPTION 10 : Polices équilibrées et professionnelles */
+    /* --font-primary: 'Roboto Slab', serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-tertiary: 'Roboto Condensed', sans-serif; */
     
     /* Espacements */
     --spacing-xs: 0.5rem;
@@ -81,12 +131,22 @@ body {
    CURSEUR PERSONNALISÉ
    ============================================ */
 
-body {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23d97706" d="M12 2C8 2 4.5 4.5 3 8c-1.5 3.5-1.5 7.5 0 11 1.5 3.5 5 6 9 6s7.5-2.5 9-6c1.5-3.5 1.5-7.5 0-11C19.5 4.5 16 2 12 2zm0 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/></svg>') 12 12, auto;
+/* OPTION 4 : Étoile/Éclat (couleur #d97706) */
+/* body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23d97706" d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><circle cx="12" cy="12" r="1.5" fill="%23d97706"/></svg>') 12 12, auto;
 }
 
 a, button, .btn {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23ea580c" d="M12 2C8 2 4.5 4.5 3 8c-1.5 3.5-1.5 7.5 0 11 1.5 3.5 5 6 9 6s7.5-2.5 9-6c1.5-3.5 1.5-7.5 0-11C19.5 4.5 16 2 12 2zm0 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/></svg>') 12 12, pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23ea580c" d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><circle cx="12" cy="12" r="1.5" fill="%23ea580c"/></svg>') 12 12, pointer;
+} */
+
+/* OPTION 9 : Cercle avec point central (couleur #1b1e2b) */
+body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="%231b1e2b" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="%231b1e2b"/></svg>') 12 12, auto;
+}
+
+a, button, .btn {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="%23d97706" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="%23d97706"/></svg>') 12 12, pointer;
 }
 
 /* ============================================
@@ -345,7 +405,6 @@ a, button, .btn {
     font-weight: bold;
     color: var(--color-accent);
     font-style: italic;
-    margin-bottom: var(--spacing-lg);
     font-family: var(--font-tertiary);
     text-align: center;
 }
@@ -703,12 +762,12 @@ tr:hover {
 
 .character-info-item {
     padding: var(--spacing-xs);
-    background: var(--color-bg-alt);
+    background: var(--color-light);
     border-radius: var(--border-radius);
 }
 
 .character-info-item strong {
-    color: var(--color-primary);
+    color: var(--color-dark);
 }
 
 /* Formulaire */
