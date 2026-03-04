@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 musicToggle.classList.add('playing');
                 isPlaying = true;
+                backgroundMusic.volume = 0.2;
             }
         });
         

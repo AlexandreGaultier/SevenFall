@@ -304,7 +304,7 @@ a, button, .btn {
     background: var(--color-tertiary);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     opacity: 0.8;
-    animation: fall 12s infinite linear;
+    animation: fall 10s infinite linear;
 }
 
 .leaf-1 {
@@ -314,6 +314,7 @@ a, button, .btn {
 
 .leaf-2 {
     left: 50%;
+    top: -10%;
     animation-delay: 3s;
     width: 25px;
     height: 25px;
@@ -321,9 +322,19 @@ a, button, .btn {
 
 .leaf-3 {
     left: 80%;
+    top: -10%;
     animation-delay: 6s;
     width: 35px;
     height: 35px;
+}
+
+.leaf-4 {
+    left: 37%;
+    top: -10%;
+    animation-delay: 2s;
+    width: 25px;
+    height: 25px;
+    animation: fall 8s infinite linear;
 }
 
 @keyframes fall {
