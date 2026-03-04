@@ -5,7 +5,7 @@
 :root {
     /* Palette Automnale Principale */
 
-    --color-primary: #d97706;        
+    /* --color-primary: #d97706;        
     --color-secondary: #ea580c;     
     --color-accent: #f97316;        
     --color-dark: #78350f;          
@@ -15,50 +15,25 @@
     --color-bg-alt: #ffedd5;        
     --color-text: #1c1917;          
     --color-text-light: #78716c;    
-    --color-white: #ffffff;
-    
-    /* Autres palettes en commentaire */
-    
-    /* Palette Automnale Alternative 1 - Plus douce */
-    /* --color-primary: #c2410c;
-    --color-secondary: #ea580c;
-    --color-accent: #fb923c;
-    --color-dark: #7c2d12;
-    --color-darker: #431407;
-    --color-light: #ffedd5;
-    --color-bg: #fff7ed;
-    --color-bg-alt: #fef3c7;
-    --color-text: #1c1917;
-    --color-text-light: #78716c; */
-    
-    /* Palette Automnale Alternative 2 - Plus sombre */
-    /* --color-primary: #b45309;
-    --color-secondary: #d97706;
-    --color-accent: #f59e0b;
-    --color-dark: #92400e;
-    --color-darker: #78350f;
-    --color-light: #fde68a;
-    --color-bg: #fefce8;
-    --color-bg-alt: #fef9c3;
-    --color-text: #1c1917;
-    --color-text-light: #78716c; */
-    
-    /* Palette Noir, Blanc et Orange */
-    /* --color-primary: #ff6b35;       
-    --color-secondary: #f7931e;      
-    --color-accent: #ff8c42;         
-    --color-dark: #1a1a1a;           
-    --color-darker: #0d0d0d;         
-    --color-light: #ffb380;           
-    --color-bg: #ffffff;              
-    --color-bg-alt: #f5f5f5;          
-    --color-text: #1a1a1a;            
-    --color-text-light: #666666;      
     --color-white: #ffffff; */
 
+    --color-primary: #F4C89F;        
+    --color-secondary: #E8D4BA;
+    --color-tertiary: #d97706;
+    --color-accent: #3B527A;        
+    --color-dark: #2C3040;          
+    --color-darker: #1b1e2b;        
+    --color-light: #FCF8DA;         
+    --color-bg: #fff7ed;            
+    --color-bg-alt: #ffedd5;        
+    --color-text: #1c1917;          
+    --color-text-light: #78716c;    
+    --color-white: #ffffff;
+
     /* Typographie */
-    --font-primary: 'Georgia', 'Times New Roman', serif;
-    --font-secondary: 'Arial', sans-serif;
+    --font-primary: Lato, sans-serif;
+    --font-secondary: Montserrat, sans-serif;
+    --font-tertiary: Text Gyre Termes, sans-serif;
     
     /* Espacements */
     --spacing-xs: 0.5rem;
@@ -140,13 +115,13 @@ a, button, .btn {
     font-family: var(--font-primary);
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--color-accent);
+    color: var(--color-primary);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .nav-logo:hover {
-    color: var(--color-light);
+    color: var(--color-tertiary);
     transform: scale(1.05);
 }
 
@@ -157,7 +132,7 @@ a, button, .btn {
 }
 
 .nav-link {
-    color: var(--color-light);
+    color: var(--color-secondary);
     text-decoration: none;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius);
@@ -172,7 +147,7 @@ a, button, .btn {
     left: 50%;
     width: 0;
     height: 2px;
-    background: var(--color-accent);
+    background: var(--color-tertiary);
     transition: var(--transition);
     transform: translateX(-50%);
 }
@@ -184,7 +159,7 @@ a, button, .btn {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--color-accent);
+    color: var(--color-light);
 }
 
 .nav-toggle {
@@ -214,7 +189,13 @@ a, button, .btn {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    background-image: url('./assets/images/background3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+    /* background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%); */
     overflow: hidden;
     padding: var(--spacing-xl) var(--spacing-sm);
 }
@@ -228,14 +209,14 @@ a, button, .btn {
 .hero-title {
     font-family: var(--font-primary);
     font-size: 4rem;
-    color: var(--color-dark);
+    color: var(--color-text);
     margin-bottom: var(--spacing-sm);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: var(--color-text-light);
+    color: var(--color-text);
     margin-bottom: var(--spacing-md);
 }
 
@@ -260,10 +241,10 @@ a, button, .btn {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: var(--color-primary);
+    background: var(--color-tertiary);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    opacity: 0.6;
-    animation: fall 10s infinite linear;
+    opacity: 0.8;
+    animation: fall 12s infinite linear;
 }
 
 .leaf-1 {
@@ -353,15 +334,20 @@ a, button, .btn {
 }
 
 .content-card p {
+    margin : 0 3rem;
     margin-bottom: var(--spacing-sm);
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 .content-card .lead {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--color-dark);
-    margin-bottom: var(--spacing-md);
+    color: var(--color-accent);
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+    font-family: var(--font-tertiary);
+    text-align: center;
 }
 
 .features-grid {
@@ -413,24 +399,26 @@ a, button, .btn {
 }
 
 .btn-primary {
-    background: var(--color-primary);
+    background: var(--color-tertiary);
     color: var(--color-white);
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.9);
 }
 
 .btn-primary:hover {
-    background: var(--color-secondary);
+    background: #e78620;
     transform: scale(1.05);
     box-shadow: var(--shadow-md);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+    color: var(--color-tertiary);
+    text-shadow: 0px 1px 2px rgba(226, 168, 101, 0.9);
+    border-color: var(--color-tertiary);
 }
 
 .btn-secondary:hover {
-    background: var(--color-primary);
+    background: var(--color-tertiary);
     color: var(--color-white);
     transform: scale(1.05);
 }
@@ -484,13 +472,20 @@ a, button, .btn {
 
 .footer-section h3,
 .footer-section h4 {
-    color: var(--color-accent);
+    color: var(--color-light);
+    text-transform: uppercase;
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-primary);
 }
 
 .footer-section ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xs);
 }
 
 .footer-section ul li {
@@ -498,14 +493,18 @@ a, button, .btn {
 }
 
 .footer-section a {
-    color: var(--color-light);
+    color: var(--color-white);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-section a:hover {
-    color: var(--color-accent);
+    color: var(--color-tertiary);
     padding-left: var(--spacing-xs);
+}
+
+.footer-section p {
+    color: var(--color-white);
 }
 
 .footer-bottom {
@@ -530,11 +529,11 @@ a, button, .btn {
 .music-btn {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background: var(--color-primary);
+    border-radius: 15%;
+    background: var(--color-light);
     border: none;
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
@@ -544,13 +543,12 @@ a, button, .btn {
 }
 
 .music-btn:hover {
-    background: var(--color-secondary);
     transform: scale(1.1);
     box-shadow: var(--shadow-lg);
 }
 
 .music-btn.playing {
-    background: var(--color-secondary);
+    background: var(--color-tertiary);
     animation: pulse 2s infinite;
 }
 
@@ -669,7 +667,7 @@ th, td {
 }
 
 th {
-    background: var(--color-primary);
+    background: var(--color-accent);
     color: var(--color-white);
     font-weight: bold;
 }
