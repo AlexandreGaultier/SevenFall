@@ -420,6 +420,23 @@ a, button, .btn {
     text-align: center;
 }
 
+.content-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    font-family: var(--font-primary);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.content-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

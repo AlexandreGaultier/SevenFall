@@ -67,10 +67,6 @@ Le site est entièrement responsive :
 2. Naviguez entre les différentes pages
 3. Utilisez le bouton musique en bas à droite pour contrôler la musique de fond
 
-## 📝 Formulaire de Scénarios
-
-La page `scenarios.html` contient un formulaire pour déposer des scénarios. Actuellement, le formulaire affiche une alerte de confirmation. Pour une utilisation en production, vous devrez connecter le formulaire à un backend.
-
 ## 🛠️ Technologies Utilisées
 
 - HTML5
