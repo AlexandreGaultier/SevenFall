@@ -42,42 +42,87 @@
         </div>
     </section>
 
-    <!-- Section Attributs -->
-    <section class="section section">
+    <!-- Section Portées -->
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Attributs</h2>
+            <h2 class="section-title">Portées</h2>
             <div class="content-card">
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Chaque personnage possède des attributs : <strong>Puissance, Agilité, Vaillance, Instinct et Savoir</strong>.</p>
-                
-                <h3 class="content-card-title">PUISSANCE (PUI) / FORCE (FOR)</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Puissance physique, effort brut</p>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>Extensions :</strong> Athlétisme, Domination, Endurance brute</p>
-                
-                <h3 class="content-card-title">AGILITÉ (AGI) / DEXTÉRITÉ (DEX)</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Agilité, précision, vitesse</p>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>Extensions :</strong> Acrobaties, Discrétion, Précision</p>
-                
-                <h3 class="content-card-title">VAILLANCE (VAI) / CONSTITUTION (CON)</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Résistance, santé, ténacité</p>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>Extensions :</strong> Résistance, Tenacité, Survie</p>
-                
-                <h3 class="content-card-title">INSTINCT (INS) / SAGESSE (SAG)</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Instinct, perception, lien au monde</p>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>Extensions :</strong> Perception, Instinct, Spiritualité</p>
-                
-                <h3 class="content-card-title">SAVOIR (SAV) / INTELLIGENCE (INT)</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Connaissance, logique, magie</p>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>Extensions :</strong> Savoir, Analyse, Arcanes</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>CaC</strong></td>
+                                <td>Corps à corps, moins de 3m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Courte portée</strong></td>
+                                <td>3 à 5m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Moyenne portée</strong></td>
+                                <td>6 à 9m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Longue portée</strong></td>
+                                <td>9 à 16m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Portées -->
+    <!-- Section Attributs -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Portées</h2>
+            <h2 class="section-title">Attributs</h2>
             <div class="content-card">
-                    <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>CaC :</strong> Corps à corps, moins de 3m. <strong>Courte portée :</strong> 3 à 5m. <strong>Moyenne portée :</strong> 6 à 9m. <strong>Longue portée :</strong> 9 à 16m.</p>
+                <p style="text-align: center; margin-bottom: var(--spacing-md);">Chaque personnage possède des attributs : <strong>Puissance, Agilité, Vaillance, Instinct et Savoir</strong>.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Attribut</th>
+                                <th>Description</th>
+                                <th>Extensions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PUISSANCE (PUI)<br> <i style="color: var(--color-accent);">ou force (FOR)</i></strong></td>
+                                <td>Puissance physique, effort brut</td>
+                                <td>Athlétisme, Domination, Endurance brute</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AGILITÉ (AGI)<br> <i style="color: var(--color-accent);">ou dextérité (DEX)</i></strong></td>
+                                <td>Agilité, précision, vitesse</td>
+                                <td>Acrobaties, Discrétion, Précision</td>
+                            </tr>
+                            <tr>
+                                <td><strong>VAILLANCE (VAI)<br> <i style="color: var(--color-accent);">ou constitution (CON)</i></strong></td>
+                                <td>Résistance, santé, ténacité</td>
+                                <td>Résistance, Tenacité, Survie</td>
+                            </tr>
+                            <tr>
+                                <td><strong>INSTINCT (INS)<br> <i style="color: var(--color-accent);">ou sagesse (SAG)</i></strong></td>
+                                <td>Instinct, perception, lien au monde</td>
+                                <td>Perception, Instinct, Spiritualité</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SAVOIR (SAV)<br> <i style="color: var(--color-accent);">ou intelligence (INT)</i></strong></td>
+                                <td>Connaissance, logique, magie</td>
+                                <td>Savoir, Analyse, Arcanes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -88,26 +133,164 @@
             <h2 class="section-title">Système de Combat</h2>
             <div class="content-card">
                 <h3 class="content-card-title">Actions par Tour</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);">Un joueur peut faire <strong>UNE action</strong> parmi :</p>
-                <p style="text-align: center; margin-bottom: var(--spacing-sm);"><strong>Attaquer / Lancer un sort</strong> | <strong>Défendre / Protéger un allié</strong> | <strong>Se repositionner + action légère</strong> | <strong>Soigner</strong></p>
+                <p style="text-align: center; margin-bottom: var(--spacing-md);">Un joueur peut faire <strong>UNE action</strong> parmi :</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Attaquer / Lancer un sort</strong></td>
+                                <td>Utiliser une arme, un sort ou une capacité offensive</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Défendre / Protéger</strong></td>
+                                <td>Se défendre ou protéger un allié</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Se repositionner + action légère</strong></td>
+                                <td>Se déplacer et utiliser un objet ou préparer une action</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Soigner</strong></td>
+                                <td>Soigner un allié ou soi-même</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
-                <h3 class="content-card-title">Attaquer</h3>
-                <p>Le joueur choisit l'arme, le sort ou la capacité à utiliser et y ajoute si nécessaire des modificateurs (la distance par exemple) ainsi que ses attributs : <strong>PUISSANCE</strong> pour les armes, <strong>INTELLIGENCE</strong> pour les sorts.</p>
-                <p>Si le joueur fait un <strong>coup critique</strong> (dé max), alors il gagne un bonus décidé par le MJ.</p>
-                <p>Si le joueur fait un <strong>échec critique</strong> (1), alors il gagne un malus décidé par le MJ.</p>
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Attaquer</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Attribut utilisé</strong></td>
+                                <td><strong>PUISSANCE</strong> pour les armes, <strong>INTELLIGENCE</strong> pour les sorts</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coup critique</strong></td>
+                                <td>Dé max : bonus décidé par le MJ (dégât bonus, brûlure, saignement, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Échec critique</strong></td>
+                                <td>Dé à 1 : malus décidé par le MJ (opportunité à l'ennemi, malus de dé, etc.)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
-                <h3 class="content-card-title">Se Défendre</h3>
-                <p>Quand un joueur ou un monstre est attaqué, celui-ci peut se défendre et prévenir des dégâts s'il est équipé d'un bouclier (léger ou lourd) et lance 1d4 (bouclier léger) ou 1d6 (bouclier lourd) à soustraire aux dégâts de l'attaque. Il soustrait aussi des dégâts reçus sa défense (DEF) de base.</p>
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Se Défendre</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Bouclier léger</strong></td>
+                                <td>Lance 1d4 à soustraire aux dégâts + DEF de base</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bouclier lourd</strong></td>
+                                <td>Lance 1d6 à soustraire aux dégâts + DEF de base</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sans bouclier</strong></td>
+                                <td>Soustrait uniquement la DEF de base</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
-                <h3 class="content-card-title">Protéger</h3>
-                <p>Un joueur ou un monstre peut dépenser son tour afin de protéger un de ses alliés. Il subira l'attaque à la place de la cible et préviendra 1d6 bonus des dégâts en plus de sa propre défense.</p>
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Protéger</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Action</strong></td>
+                                <td>Dépenser son tour pour protéger un allié</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Effet</strong></td>
+                                <td>Subit l'attaque à la place de la cible + prévient 1d4 (bouclier léger) ou 1d6 (bouclier lourd) bonus des dégâts en plus de sa propre défense</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
-                <h3 class="content-card-title">Esquiver</h3>
-                <p>Quand un joueur ou un monstre est attaqué : Certaines armures donnent la possibilité de lancer 1D6 en cas d'attaque subie. Si le résultat est de 6 (armure de cuir) ou 5 ou 6 (armure de tissu), l'attaque est esquivée et la cible ne subit aucun dégât.</p>
-                <p>De plus, si le joueur possède un modificateur d'agilité, ce dernier affecte ce lancé.</p>
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Esquiver</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Armure</th>
+                                <th>Résultat d'esquive</th>
+                                <th>Bonus d'Agilité</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Armure de cuir</strong></td>
+                                <td>Esquive sur 6 (1d6)</td>
+                                <td>+1 AGI : esquive sur 5 et 6<br>+3 AGI : esquive sur 4, 5 et 6</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Armure de tissu</strong></td>
+                                <td>Esquive sur 5 ou 6 (1d6), sauf CaC</td>
+                                <td>+1 AGI : esquive sur 4, 5 et 6<br>+3 AGI : esquive sur 3, 4, 5 et 6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
-                <h3 class="content-card-title">KO</h3>
-                <p>Si un joueur ou un monstre tombe à 0 points de vie, il est KO et ne pourra plus jouer lors de ses tours. Il est possible de réanimer un joueur KO en utilisant un soin par le biais d'un objet ou d'un sort. Un joueur réanimé pourra de nouveau jouer ses tours, cependant il aura un malus de -1 à tous ses lancers offensifs et défensifs.</p>
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">KO</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>État</th>
+                                <th>Effet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>À 0 PV</strong></td>
+                                <td>KO : ne peut plus jouer lors de ses tours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Réanimation</strong></td>
+                                <td>Possible avec un soin (objet ou sort)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Malus après réanimation</strong></td>
+                                <td>-1 à tous les lancers offensifs et défensifs (maximum -3 si KO plusieurs fois)<br>-1 au déplacement jusqu'à la fin du combat</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fin de combat</strong></td>
+                                <td>Tous les malus sont retirés</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
                 <h5 style="color: var(--color-accent); margin-bottom: 0; margin-top: 3rem; text-align: center;">Expériemental</h5>
                 <h3 class="content-card-title">Combat de Boss</h3>

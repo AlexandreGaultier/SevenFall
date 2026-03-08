@@ -144,8 +144,330 @@
         </div>
     </section>
 
-    <!-- Détails des Classes -->
+    <!-- Tableau des Armes -->
     <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Armes</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Arme / Sort</th>
+                            <th>Slot</th>
+                            <th>Dé</th>
+                            <th>Modificateur</th>
+                            <th>Portée</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Serpe</strong></td>
+                            <td>1</td>
+                            <td>1d4 + 1d4</td>
+                            <td>—</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dague</strong></td>
+                            <td>1</td>
+                            <td>1d4</td>
+                            <td>+2 dégâts</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Épée</strong></td>
+                            <td>1</td>
+                            <td>1d6</td>
+                            <td>—</td>
+                            <td>CaC, courte distance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Épée à deux mains</strong></td>
+                            <td>2</td>
+                            <td>1d10</td>
+                            <td>—</td>
+                            <td>CaC, courte distance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hache</strong></td>
+                            <td>1</td>
+                            <td>1d8</td>
+                            <td>—</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hache à deux mains</strong></td>
+                            <td>2</td>
+                            <td>1d10</td>
+                            <td>+2 dégâts</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Masse à deux mains</strong></td>
+                            <td>2</td>
+                            <td>1d10</td>
+                            <td>+2 dégâts</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rapière</strong></td>
+                            <td>1</td>
+                            <td>1d6</td>
+                            <td>+1 dégât si l'allié attaque la même cible ce tour</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fléau</strong></td>
+                            <td>1</td>
+                            <td>1d6</td>
+                            <td>+1 dégât</td>
+                            <td>CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lance</strong></td>
+                            <td>1</td>
+                            <td>1d6</td>
+                            <td>—</td>
+                            <td>CaC, courte distance, moyenne distance (si lancée)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arc (à deux mains)</strong></td>
+                            <td>1</td>
+                            <td>1d6</td>
+                            <td>Si distance > 9m : -1 dégât. Si distance > 16m : -2 dégât.</td>
+                            <td>Courte, moyenne et longue distance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arc long (à deux mains)</strong></td>
+                            <td>1</td>
+                            <td>1d8</td>
+                            <td>—</td>
+                            <td>Moyenne et longue distance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arbalète (à deux mains)</strong></td>
+                            <td>1</td>
+                            <td>1d8</td>
+                            <td>Si distance < 16m : +1 dégât. Si distance >= 16m : -2 dégât.</td>
+                            <td>Courte, moyenne et longue distance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Javelot (x6)</strong></td>
+                            <td>1</td>
+                            <td>1d8</td>
+                            <td>Munitions : récupération nécessaire après 6 lancers. Récupérer un javelot = action légère ou déplacement.</td>
+                            <td>CaC, courte et moyenne portée</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tableau des Sorts -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Sorts</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Dégâts / Soin</th>
+                            <th>Modificateur</th>
+                            <th>Portée</th>
+                            <th>Temps de récupération</th>
+                            <th>Niveau</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Flammèche</strong></td>
+                            <td>1d4</td>
+                            <td>—</td>
+                            <td>CaC, courte portée</td>
+                            <td>0 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Boule de feu</strong></td>
+                            <td>1d10</td>
+                            <td>Si distance > 9m : -1 dégât. Si distance > 16m : -2 dégât.</td>
+                            <td>Courte, moyenne et longue portée</td>
+                            <td>4 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frappe aquatique</strong></td>
+                            <td>1d6</td>
+                            <td>—</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>1 tour</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Stalagmite de glace</strong></td>
+                            <td>1d8</td>
+                            <td>Traverse armure de cuir</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>3 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pilier de terre</strong></td>
+                            <td>1d4</td>
+                            <td>—</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>0 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cercueil de pierre</strong></td>
+                            <td>1d6</td>
+                            <td>Le sol s'ouvre et se referme violemment, incapacitant l'ennemi</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>3 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Éclair</strong></td>
+                            <td>1d8</td>
+                            <td>+1 dégât contre armure de fer et cotte de mailles</td>
+                            <td>Moyenne et longue portée</td>
+                            <td>3 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chaîne d'éclair</strong></td>
+                            <td>1d4</td>
+                            <td>Si touche, touche également ennemis à moins de 5m. +1 dégât contre armure de fer et cotte de mailles.</td>
+                            <td>Courte, moyenne et longue portée</td>
+                            <td>2 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trait arcanique</strong></td>
+                            <td>1d6</td>
+                            <td>—</td>
+                            <td>CaC, courte, moyenne et longue portée</td>
+                            <td>1 tour</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soin ciblé</strong></td>
+                            <td>1d6</td>
+                            <td>Soin à un allié</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>2 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soin collectif</strong></td>
+                            <td>1d4</td>
+                            <td>Soin à plusieurs alliés</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>4 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soin concentré ciblé</strong></td>
+                            <td>1d10</td>
+                            <td>Soin important à un allié</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>6 tours</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soin de distance</strong></td>
+                            <td>1d4</td>
+                            <td>Portée max 16m</td>
+                            <td>Moyenne et longue portée</td>
+                            <td>3 tours</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gel</strong></td>
+                            <td>—</td>
+                            <td>Réduit la distance</td>
+                            <td>Courte et moyenne portée</td>
+                            <td>3 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Armure magique de roches</strong></td>
+                            <td>—</td>
+                            <td>+2 DEF lors de la prochaine attaque subie</td>
+                            <td>—</td>
+                            <td>3 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Surcharge</strong></td>
+                            <td>—</td>
+                            <td>+2 dégâts sur la prochaine attaque d'un allié</td>
+                            <td>CaC, courte et moyenne portée</td>
+                            <td>3 tours</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vigueur</strong></td>
+                            <td>1d6</td>
+                            <td>Donne temporairement un bonus de point de vie à un allié pendant son tour</td>
+                            <td>—</td>
+                            <td>2 tours</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marque</strong></td>
+                            <td>—</td>
+                            <td>La cible prend +1 dégât par attaque pendant 1 tour</td>
+                            <td>—</td>
+                            <td>3 tours</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tableau des Armures -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Armures</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Armure</th>
+                            <th>Effet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tissu simple</strong></td>
+                            <td>Possibilité d'esquive sur un 5 ou un 6 sur 1d6 sauf attaque CaC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Armure de cuir</strong></td>
+                            <td>+1 sur défense (sauf flèches). Possibilité d'esquive sur un 6 sur le lancer 1d6</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cotte de mailles</strong></td>
+                            <td>+2 sur défense</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Armure lourde</strong></td>
+                            <td>+3 sur défense</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Détails des Classes -->
+    <section class="section">
         <div class="container">
             <h2 class="section-title">Détails des Classes</h2>
             

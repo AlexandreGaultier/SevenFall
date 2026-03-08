@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -47,265 +49,685 @@
         <div class="container">
             <!-- Aelyr Cendrefil -->
             <div class="character-sheet">
-                <h3>Aelyr Cendrefil</h3>
-                <div class="character-info">
-                    <div class="character-info-item">
-                        <strong>Classe :</strong> Tisseur Arcanique
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Race :</strong> Humain
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Niveau :</strong> 1
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Rôle :</strong> DPS magique
-                    </div>
+                <h3 style="text-align: center; margin-bottom: var(--spacing-md);">Aelyr Cendrefil</h3>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Informations Générales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Classe</strong></td>
+                                <td>Tisseur Arcanique</td>
+                                <td><strong>Race</strong></td>
+                                <td>Humain</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Niveau</strong></td>
+                                <td>1</td>
+                                <td><strong>Rôle</strong></td>
+                                <td>DPS magique</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">POINTS DE VIE</h4>
-                    <p><strong>PV max :</strong> 8 | <strong>PV actuels :</strong> 8</p>
-                    <p><strong>DEF :</strong> +1 | <strong>Armure :</strong> Tissu simple (esquive 1d6 sur 5 ou 6, sauf CaC) | <strong>Bouclier :</strong> /</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Points de Vie & Défense</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PV max</strong></td>
+                                <td>8</td>
+                                <td><strong>PV actuels</strong></td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DEF</strong></td>
+                                <td>+1</td>
+                                <td><strong>Armure</strong></td>
+                                <td>Tissu simple (esquive 1d6 sur 5 ou 6, sauf CaC)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bouclier</strong></td>
+                                <td colspan="3">/</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ATTRIBUTS</h4>
-                    <p>PUI : 8 (-1) | AGI : 10 (0) | VAI : 12 (+1) | INS : 14 (+2) | INT : 15 (+3)</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="5">Attributs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PUI</strong></td>
+                                <td>8 (-1)</td>
+                                <td><strong>AGI</strong></td>
+                                <td>10 (0)</td>
+                                <td><strong>VAI</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>INS</strong></td>
+                                <td>14 (+2)</td>
+                                <td><strong>INT</strong></td>
+                                <td>15 (+3)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ARMES</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Serpe (1d4 x2 si touche)</li>
-                        <li>Dague rituelle (1d4 +2)</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Armes</th>
+                                <th>Dégâts</th>
+                                <th>Portée</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Serpe</strong></td>
+                                <td>1d4 x2 si touche</td>
+                                <td>Corps à corps</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dague rituelle</strong></td>
+                                <td>1d4 +2</td>
+                                <td>Corps à corps</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">SORTS / CAPACITÉS</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Flammèche (1d4 + INT)</li>
-                        <li>Trait magique (1d6 + INT) 1 tour</li>
-                        <li>Boule de feu (1d10 + INT) 4 tours</li>
-                        <li>Eclair (1d8 + INT) 3 tours</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sorts / Capacités</th>
+                                <th>Dégâts</th>
+                                <th>Portée</th>
+                                <th>Temps de récupération</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Flammèche</strong></td>
+                                <td>1d4 + INT</td>
+                                <td>Corps à corps à courte portée</td>
+                                <td>0 tours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Trait arcanique</strong></td>
+                                <td>1d6 + INT (1 tour)</td>
+                                <td>Corps à corps à longue portée</td>
+                                <td>1 tour</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Boule de feu</strong></td>
+                                <td>1d10 + INT (4 tours)</td>
+                                <td>Courte portée à longue portée</td>
+                                <td>4 tours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Éclair</strong></td>
+                                <td>1d8 + INT (3 tours)</td>
+                                <td>moyenne portée à longue portée</td>
+                                <td>3 tours</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ÉQUIPEMENT</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Grimoire</li>
-                        <li>Sac de composants</li>
-                        <li>Pierre-lanterne</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Équipement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Grimoire</td>
+                            </tr>
+                            <tr>
+                                <td>Sac de composants</td>
+                            </tr>
+                            <tr>
+                                <td>Pierre-lanterne</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">NOTES / HISTOIRE</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Ancienne apprentie d'une tour-arcanum effondrée</li>
-                        <li>Obsédée par la biologie des monstres</li>
-                        <li>Voyage pour retrouver des fragments de savoir perdu</li>
-                    </ul>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Notes / Histoire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ancienne apprentie d'une tour-arcanum effondrée.
+                            </tr>
+                            <tr>
+                                <td>Obsédée par la biologie des monstres. </td>
+                            </tr>
+                            <tr>
+                                <td>Voyage pour retrouver des fragments de savoir perdu.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
             <!-- Ser Calmon Doryn -->
             <div class="character-sheet">
-                <h3>Ser Calmon Doryn</h3>
-                <div class="character-info">
-                    <div class="character-info-item">
-                        <strong>Classe :</strong> Lame-Litanie
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Race :</strong> Humain
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Niveau :</strong> 1
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Rôle :</strong> Tank / Support
-                    </div>
+                <h3 style="text-align: center; margin-bottom: var(--spacing-md);">Ser Calmon Doryn</h3>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Informations Générales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Classe</strong></td>
+                                <td>Lame-Litanie</td>
+                                <td><strong>Race</strong></td>
+                                <td>Humain</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Niveau</strong></td>
+                                <td>1</td>
+                                <td><strong>Rôle</strong></td>
+                                <td>Tank / Support</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">POINTS DE VIE</h4>
-                    <p><strong>PV max :</strong> 12 | <strong>PV actuels :</strong> 12</p>
-                    <p><strong>DEF :</strong> +3 | <strong>Armure :</strong> Cotte de mailles +2 | <strong>Bouclier :</strong> Bouclier lourd (1d4 + 2)</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Points de Vie & Défense</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PV max</strong></td>
+                                <td>12</td>
+                                <td><strong>PV actuels</strong></td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DEF</strong></td>
+                                <td>+3</td>
+                                <td><strong>Armure</strong></td>
+                                <td>Cotte de mailles +2</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bouclier</strong></td>
+                                <td colspan="3">Bouclier lourd (1d4 + 2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ATTRIBUTS</h4>
-                    <p>PUI : 14 (+2) | AGI : 8 (-1) | VAI : 15 (+3) | INS : 12 (+1) | INT : 10 (0)</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6">Attributs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PUI</strong></td>
+                                <td>14 (+2)</td>
+                                <td><strong>AGI</strong></td>
+                                <td>8 (-1)</td>
+                                <td><strong>VAI</strong></td>
+                                <td>12 (+1)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>INS</strong></td>
+                                <td>12 (+1)</td>
+                                <td><strong>INT</strong></td>
+                                <td>15 (+3)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ARMES</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Épée longue (1d6) CP</li>
-                        <li>Lance (1d6) MP</li>
-                        <li>Fléau (1d6 +1) CaC</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Armes</th>
+                                <th>Dégâts</th>
+                                <th>Portée</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Épée longue</strong></td>
+                                <td>1d6</td>
+                                <td>Courte portée</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lance</strong></td>
+                                <td>1d6</td>
+                                <td>Moyenne portée</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fléau</strong></td>
+                                <td>1d6 +1</td>
+                                <td>Corps à corps</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">SORTS / CAPACITÉS</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Protection (utilisation du bouclier) sur soi-même ou un allié à Courte Portée</li>
-                        <li>Provocation : attirer le focus d'un monstre sur soi</li>
-                        <li>Concentration : +2 à la prochaine attaque</li>
-                        <li>Soin collectif (1d4) 4 tours</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sorts / Capacités</th>
+                                <th>Détails</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Protection</strong></td>
+                                <td>Utilisation du bouclier sur soi-même ou un allié à Courte Portée</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Provocation</strong></td>
+                                <td>Attirer le focus d'un monstre sur soi</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Concentration</strong></td>
+                                <td>+2 à la prochaine attaque</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Soin collectif</strong></td>
+                                <td>1d4 (4 tours)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ÉQUIPEMENT</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Kit de réparation d'armure</li>
-                        <li>Cape rituelle</li>
-                        <li>Rations bénies (x1, +8hp)</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Équipement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kit de réparation d'armure, Cape rituelle, Rations bénies (x1, +8hp)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">NOTES / HISTOIRE</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Ancien gardien de sanctuaire de guilde</li>
-                        <li>A juré de défendre ceux que les guildes abandonnent</li>
-                        <li>Recherche sa femme disparue depuis 5 ans</li>
-                    </ul>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Notes / Histoire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ancien gardien de sanctuaire de guilde. A juré de défendre ceux que les guildes
+                                    abandonnent. Recherche sa femme disparue depuis 5 ans.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
             <!-- Nerys Veolia -->
             <div class="character-sheet">
-                <h3>Nerys Veolia</h3>
-                <div class="character-info">
-                    <div class="character-info-item">
-                        <strong>Classe :</strong> Marche-Rêve
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Race :</strong> Humain
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Niveau :</strong> 1
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Rôle :</strong> Soin / Contrôle
-                    </div>
+                <h3 style="text-align: center; margin-bottom: var(--spacing-md);">Nerys Ovelia</h3>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Informations Générales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Classe</strong></td>
+                                <td>Marche-Rêve</td>
+                                <td><strong>Race</strong></td>
+                                <td>Humain</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Niveau</strong></td>
+                                <td>1</td>
+                                <td><strong>Rôle</strong></td>
+                                <td>Soin / Contrôle</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">POINTS DE VIE</h4>
-                    <p><strong>PV max :</strong> 10 | <strong>PV actuels :</strong> 10</p>
-                    <p><strong>DEF :</strong> +1 | <strong>Armure :</strong> Cuir +1 (sauf flèche), esquive sur 6 sur 1d6 | <strong>Bouclier :</strong> Aucun</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Points de Vie & Défense</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PV max</strong></td>
+                                <td>10</td>
+                                <td><strong>PV actuels</strong></td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DEF</strong></td>
+                                <td>+1</td>
+                                <td><strong>Armure</strong></td>
+                                <td>Cuir +1 (sauf flèche), esquive sur 6 sur 1d6</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bouclier</strong></td>
+                                <td colspan="3">Aucun</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ATTRIBUTS</h4>
-                    <p>PUI : 8 (-1) | AGI : 10 (0) | VAI : 12 (+1) | INS : 15 (+3) | INT : 14 (+2)</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6">Attributs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PUI</strong></td>
+                                <td>8 (-1)</td>
+                                <td><strong>AGI</strong></td>
+                                <td>10 (0)</td>
+                                <td><strong>VAI</strong></td>
+                                <td>12 (+1)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>INS</strong></td>
+                                <td>15 (+3)</td>
+                                <td><strong>INT</strong></td>
+                                <td>14 (+2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ARMES</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Serpe rituelle (1d4 x2)</li>
-                        <li>Arc (1d6)</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Armes</th>
+                                <th>Détails</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Serpe rituelle</strong></td>
+                                <td>1d4 x2</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Arc</strong></td>
+                                <td>1d6</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">SORTS / CAPACITÉS</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Soin légers ciblé (1d4 + INT) 0 tours</li>
-                        <li>Soin ciblé (1d6 + INT) 2 tours</li>
-                        <li>Soin collectif (1d4 + INT) 4 tours</li>
-                        <li>Soin concentré ciblé (1d10 +INT) 6 tours</li>
-                        <li>Marque magique : +2 sur la prochaine attaque</li>
-                        <li>Surcharge (+2 dégâts sur la prochaine attaque du joueur ciblé)</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sorts / Capacités</th>
+                                <th>Détails</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Soin légers ciblé</strong></td>
+                                <td>1d4 + INT (0 tours)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Soin ciblé</strong></td>
+                                <td>1d6 + INT (2 tours)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Soin collectif</strong></td>
+                                <td>1d4 + INT (4 tours)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Soin concentré ciblé</strong></td>
+                                <td>1d10 + INT (6 tours)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Marque magique</strong></td>
+                                <td>+2 sur la prochaine attaque</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Surcharge</strong></td>
+                                <td>+2 dégâts sur la prochaine attaque du joueur ciblé</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ÉQUIPEMENT</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Masques d'esprit</li>
-                        <li>Sac d'herbes médicinales (x3, +5hp)</li>
-                        <li>Talisman de bois ancien</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Équipement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Masques d'esprit, Sac d'herbes médicinales (x3, +5hp), Talisman de bois ancien</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">NOTES / HISTOIRE</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Élevée par un cercle de shamans itinérants</li>
-                        <li>Communique avec les esprits protecteurs</li>
-                        <li>Sent que quelque chose dérègle les liens anciens</li>
-                    </ul>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Notes / Histoire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Élevée par un cercle de shamans itinérants. Communique avec les esprits protecteurs.
+                                    Sent que quelque chose dérègle les liens anciens.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
             <!-- Brokk Ferkang -->
             <div class="character-sheet">
-                <h3>Brokk Ferkang</h3>
-                <div class="character-info">
-                    <div class="character-info-item">
-                        <strong>Classe :</strong> Saccageur
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Race :</strong> Humain
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Niveau :</strong> 1
-                    </div>
-                    <div class="character-info-item">
-                        <strong>Rôle :</strong> DPS brut
-                    </div>
+                <h3 style="text-align: center; margin-bottom: var(--spacing-md);">Brokk Ferkang</h3>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Informations Générales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Classe</strong></td>
+                                <td>Saccageur</td>
+                                <td><strong>Race</strong></td>
+                                <td>Humain</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Niveau</strong></td>
+                                <td>1</td>
+                                <td><strong>Rôle</strong></td>
+                                <td>DPS brut</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">POINTS DE VIE</h4>
-                    <p><strong>PV max :</strong> 10 | <strong>PV actuels :</strong> 10</p>
-                    <p><strong>DEF :</strong> +2 | <strong>Armure :</strong> Cuir +1 (sauf flèche), esquive sur 5 (bonus d'AGI) et 6 sur 1d6 | <strong>Bouclier :</strong> Aucun</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Points de Vie & Défense</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PV max</strong></td>
+                                <td>10</td>
+                                <td><strong>PV actuels</strong></td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DEF</strong></td>
+                                <td>+2</td>
+                                <td><strong>Armure</strong></td>
+                                <td>Cuir +1 (sauf flèche), esquive sur 5 (bonus d'AGI) et 6 sur 1d6</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bouclier</strong></td>
+                                <td colspan="3">Aucun</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ATTRIBUTS</h4>
-                    <p>PUI : 15 (+3) | AGI : 12 (+1) | VAI : 14 (+2) | INS : 8 (-1) | INT : 10 (0)</p>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6">Attributs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PUI</strong></td>
+                                <td>15 (+3)</td>
+                                <td><strong>AGI</strong></td>
+                                <td>12 (+1)</td>
+                                <td><strong>VAI</strong></td>
+                                <td>14 (+2)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>INS</strong></td>
+                                <td>8 (-1)</td>
+                                <td><strong>INT</strong></td>
+                                <td>10 (0)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ARMES</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Hache à deux mains (1d8 + PUI + 2) CaC</li>
-                        <li>Javelot (1d8 + PUI, lançable et récupérable x6) MP</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Armes</th>
+                                <th>Détails</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Hache à deux mains</strong></td>
+                                <td>1d8 + PUI + 2 (CaC)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Javelot</strong></td>
+                                <td>1d8 + PUI, lançable et récupérable x6 (MP)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">SORTS / CAPACITÉS</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Furie : sous 50% des PV (arrondi à l'inférieur), gagne +3 de Puissance mais -1 d'Agilité</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sorts / Capacités</th>
+                                <th>Détails</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Furie</strong></td>
+                                <td>Sous 50% des PV (arrondi à l'inférieur), gagne +3 de Puissance mais -1 d'Agilité
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">ÉQUIPEMENT</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Bandages</li>
-                        <li>Gourde d'alcool fort</li>
-                        <li>Sac vide</li>
-                    </ul>
+
+                <div class="table-container" style="margin-bottom: var(--spacing-md);">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Équipement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bandages, Gourde d'alcool fort, Sac vide</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div style="margin-top: var(--spacing-sm);">
-                    <h4 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">NOTES / HISTOIRE</h4>
-                    <ul style="margin-left: var(--spacing-md);">
-                        <li>Ancien mercenaire de guilde</li>
-                        <li>A survécu à une escouade entière massacrée</li>
-                        <li>Ne fuit jamais un combat… surtout quand il devrait</li>
-                    </ul>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Notes / Histoire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ancien mercenaire de guilde. A survécu à une escouade entière massacrée. Ne fuit
+                                    jamais un combat… surtout quand il devrait.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -352,4 +774,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

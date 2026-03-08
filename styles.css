@@ -712,6 +712,16 @@ a, button, .btn {
         max-width: 300px;
         text-align: center;
     }
+
+    /* Layout monstre responsive */
+    .section > .container > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    .section > .container > div[style*="grid-template-columns"] > div:last-child {
+        max-width: 100% !important;
+        margin: var(--spacing-md) auto 0;
+    }
 }
 
 @media (max-width: 480px) {
