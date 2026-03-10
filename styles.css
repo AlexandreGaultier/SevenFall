@@ -426,6 +426,8 @@ a, button, .btn {
     color: var(--color-accent);
     font-family: var(--font-primary);
     text-align: center;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: var(--spacing-xs);
     margin-bottom: var(--spacing-md);
 }
 
@@ -435,6 +437,67 @@ a, button, .btn {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* Guide Card - Style sobre */
+.guide-card {
+    border-left: 3px solid var(--color-primary);
+    padding: var(--spacing-lg);
+}
+
+.guide-list {
+    margin: 0 2rem;
+    padding: 0;
+    line-height: 1.9;
+    counter-reset: step-counter;
+    list-style: none;
+}
+
+.guide-list li {
+    counter-increment: step-counter;
+    margin-bottom: var(--spacing-md);
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.guide-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+}
+
+.guide-list li strong {
+    color: var(--color-dark);
+    font-family: var(--font-primary);
+}
+
+.guide-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.guide-link:hover {
+    color: var(--color-tertiary);
+}
+
+.guide-note {
+    margin-top: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-bg-alt);
+    border-left: 2px solid var(--color-primary);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.guide-note em {
+    color: var(--color-text-light);
+    font-style: italic;
 }
 
 .features-grid {
@@ -735,6 +798,18 @@ a, button, .btn {
 
     .content-card {
         padding: var(--spacing-sm);
+    }
+
+    .guide-card {
+        padding: var(--spacing-md);
+    }
+
+    .guide-list {
+        margin: 0 1rem;
+    }
+
+    .guide-list li {
+        padding-left: 2rem;
     }
 }
 

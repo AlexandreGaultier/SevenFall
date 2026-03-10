@@ -44,9 +44,43 @@
         </div>
     </section>
 
+    <!-- Guide de création de personnage -->
+    <section class="section">
+        <div class="container">
+            <div class="content-card guide-card">
+                <h2 class="content-card-title">Comment créer votre personnage</h2>
+                <ol class="guide-list">
+                    <li>
+                        <strong>Prenez une fiche personnage vierge <a target="_blank" href="./assets/pdf/Fiches personnages SevenFall.pdf" class="guide-link" download>(PDF)</a></strong> <i>(Dernière version le 10/03/2026)</i>.
+                    </li>
+                    <li>
+                        <strong>Choisissez un nom et une classe</strong> : Sélectionnez une classe (se référer au <a href="classes.html" class="guide-link">tableau des classes</a>) qui vous donnera votre DEF de base, votre vie (à calculer avec un lancer de dé) ainsi que les armes / sorts / armures et boucliers que vous pouvez utiliser.
+                    </li>
+                    <li>
+                        <strong>Notez vos caractéristiques</strong> : Noter vos PV, votre bonus de DEF de base, ainsi que les armes / sorts / armures et boucliers que vous souhaitez utiliser.
+                        <div class="guide-note">
+                            <em>Notez bien qu'un personnage ne peut porter que 3 slots d'armes, et jusqu'à 5 sorts (5 pour les Tisseurs Arcanique et Marche-Rêve, 2 pour les Lame-Litanie).</em>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Détaillez vos armes et sorts</strong> : Indiquez toutes les précisions de vos armes et de vos sorts sur votre fiche personnage (portée, dégâts, tours de récupérations, …)
+                    </li>
+                    <li>
+                        <strong>Définissez vos bonus d'attributs</strong> : <i>2 choix :</i> Distribuer <strong>+3, +2, +1, +0, -1</strong>, OU <strong>+2, +2, +1, +0, +0</strong> pour chacun des attributs (exemple : PUI = +2, AGI = +2, VAI = +1, INS = +0, INT = +0).
+                    </li>
+                    <li>
+                        <strong>Écrivez le lore de votre personnage</strong> : Si vous le souhaitez, écrivez un mini lore de votre personnage, d'où vient-il, ce qu'il faisait par le passé, ce qu'il fait là, etc…
+                    </li>
+                </ol>
+            </div>
+    </section>
+
     <!-- Fiches Personnages -->
     <section class="section">
         <div class="container">
+
+            <h2 class="section-title">Exemples de fiches personnages :</h2>
+
             <!-- Aelyr Cendrefil -->
             <div class="character-sheet">
                 <h3 style="text-align: center; margin-bottom: var(--spacing-md);">Aelyr Cendrefil</h3>
@@ -140,7 +174,7 @@
                         <tbody>
                             <tr>
                                 <td><strong>Serpe</strong></td>
-                                <td>1d4 x2 si touche</td>
+                                <td>1d4 + 1d4</td>
                                 <td>Corps à corps</td>
                             </tr>
                             <tr>
