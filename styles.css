@@ -278,6 +278,7 @@ a, button, .btn {
     font-size: 1.5rem;
     color: var(--color-text);
     margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -285,6 +286,7 @@ a, button, .btn {
     gap: var(--spacing-sm);
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: var(--spacing-md);
 }
 
 .hero-decoration {
@@ -549,28 +551,31 @@ a, button, .btn {
 }
 
 .btn-primary {
-    background: var(--color-tertiary);
+    background: var(--color-accent);
     color: var(--color-white);
-    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
-    background: #e78620;
+    background: var(--color-white);
+    color: var(--color-accent);
     transform: scale(1.05);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--color-tertiary);
-    text-shadow: 0px 1px 2px rgba(226, 168, 101, 0.9);
-    border-color: var(--color-tertiary);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary:hover {
-    background: var(--color-tertiary);
+    background: var(--color-accent);
     color: var(--color-white);
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================
@@ -811,6 +816,18 @@ a, button, .btn {
     .guide-list li {
         padding-left: 2rem;
     }
+
+    .monster-section {
+        padding: var(--spacing-md);
+    }
+
+    .monster-title {
+        font-size: 2rem;
+    }
+
+    .ideas-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================
@@ -932,4 +949,101 @@ tr:hover {
     font-size: 0.9rem;
     line-height: 1.8;
     border-left: 4px solid var(--color-primary);
+}
+
+/* ============================================
+   STYLES POUR LA PAGE MONSTRES
+   ============================================ */
+
+.monster-section {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-primary);
+}
+
+.monster-header {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-bg-alt);
+}
+
+.monster-title {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xs);
+}
+
+.monster-description {
+    color: var(--color-text-light);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.monster-content {
+    margin-top: var(--spacing-md);
+}
+
+/* Section Idées de Monstres */
+.ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.idea-card {
+    background: var(--color-bg-alt);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--color-accent);
+    transition: var(--transition);
+}
+
+.idea-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--color-tertiary);
+}
+
+.idea-title {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xs);
+}
+
+.idea-type {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
+.idea-description {
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.idea-capacities {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-sm);
+}
+
+.idea-capacities li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-sm);
+    border-left: 2px solid var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.95rem;
+}
+
+.idea-capacities li strong {
+    color: var(--color-accent);
 }
