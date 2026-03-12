@@ -519,12 +519,6 @@ a, button, .btn {
     border: 2px solid transparent;
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--color-primary);
-}
-
 .feature-icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-sm);
@@ -566,7 +560,8 @@ a, button, .btn {
 
 .btn-secondary {
     background: transparent;
-    color: var(--color-accent);
+    color: var(--color-text);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-color: var(--color-accent);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
