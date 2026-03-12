@@ -820,9 +820,6 @@ a, button, .btn {
         font-size: 2rem;
     }
 
-    .ideas-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* ============================================
@@ -984,61 +981,18 @@ tr:hover {
 }
 
 /* Section Idées de Monstres */
-.ideas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Layout horizontal pour les idées de monstres */
+.ideas-list {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-md);
-    margin-top: var(--spacing-md);
 }
 
-.idea-card {
-    background: var(--color-bg-alt);
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius);
-    border-left: 3px solid var(--color-accent);
-    transition: var(--transition);
+.idea-item {
+    border-left: 3px solid var(--color-primary);
 }
 
-.idea-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-    border-left-color: var(--color-tertiary);
-}
-
-.idea-title {
-    font-family: var(--font-primary);
-    font-size: 1.3rem;
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-xs);
-}
-
-.idea-type {
-    font-size: 0.9rem;
-    color: var(--color-text-light);
-    font-style: italic;
-    margin-bottom: var(--spacing-sm);
-}
-
-.idea-description {
-    color: var(--color-text);
-    line-height: 1.6;
-    margin-bottom: var(--spacing-sm);
-}
-
-.idea-capacities {
-    list-style: none;
-    padding: 0;
-    margin-top: var(--spacing-sm);
-}
-
-.idea-capacities li {
-    padding: var(--spacing-xs) 0;
-    padding-left: var(--spacing-sm);
-    border-left: 2px solid var(--color-primary);
-    margin-bottom: var(--spacing-xs);
-    font-size: 0.95rem;
-}
-
-.idea-capacities li strong {
-    color: var(--color-accent);
+.idea-item .content-card-title {
+    border-bottom: none;
+    padding-bottom: 0;
 }
