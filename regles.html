@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -46,35 +48,38 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title">Portées</h2>
-            <div class="content-card">
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Type</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>CaC</strong></td>
-                                <td>Corps à corps, moins de 3m</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Courte portée</strong></td>
-                                <td>3 à 5m</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Moyenne portée</strong></td>
-                                <td>6 à 9m</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Longue portée</strong></td>
-                                <td>9 à 16m</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="flex-row">
+                <div class="content-card" style="width: 75%;">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>CaC</strong></td>
+                                    <td>Corps à corps, moins de 3m</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Courte portée</strong></td>
+                                    <td>3 à 5m</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Moyenne portée</strong></td>
+                                    <td>6 à 9m</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Longue portée</strong></td>
+                                    <td>9 à 16m</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+                <img src="./assets/images/Fendeur de Brume.png" alt="Fendeur de Brume" class="hero-characters">
             </div>
         </div>
     </section>
@@ -83,10 +88,15 @@
     <section class="section section-alt">
         <div class="container">
             <h2 class="section-title">Attributs</h2>
-            <div class="content-card">
-                <p style="text-align: center; margin-bottom: var(--spacing-md);">Chaque personnage possède des attributs :
+            <div class="flex-row">
+                <img src="./assets/images/Lame Littanie.png" alt="Lame-Litanie" class="hero-characters">
+            <div class="content-card" style="width: 75%;">
+                <p style="text-align: center; margin-bottom: var(--spacing-md);">Chaque personnage possède des attributs
+                    :
                     <br>
-                    <strong style="font-size: 1.2rem; text-transform: uppercase;">Puissance, Agilité, Vaillance, Instinct et Savoir</strong>.</p>
+                    <strong style="font-size: 1.2rem; text-transform: uppercase;">Puissance, Agilité, Vaillance,
+                        Instinct et Savoir</strong>.
+                </p>
                 <div class="table-container">
                     <table>
                         <thead>
@@ -135,7 +145,8 @@
             <h2 class="section-title">Système de Combat</h2>
             <div class="content-card">
                 <h3 class="content-card-title">Actions par Tour</h3>
-                <p style="text-align: center; margin-bottom: var(--spacing-md);">Un joueur peut faire <strong>UNE action</strong> parmi :</p>
+                <p style="text-align: center; margin-bottom: var(--spacing-md);">Un joueur peut faire <strong>UNE
+                        action</strong> parmi :</p>
                 <div class="table-container">
                     <table>
                         <thead>
@@ -164,7 +175,7 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Attaquer</h3>
                 <div class="table-container">
                     <table>
@@ -177,7 +188,8 @@
                         <tbody>
                             <tr>
                                 <td><strong>Attribut utilisé</strong></td>
-                                <td><strong>PUISSANCE</strong> pour les armes, <strong>INTELLIGENCE</strong> pour les sorts</td>
+                                <td><strong>PUISSANCE</strong> pour les armes, <strong>INTELLIGENCE</strong> pour les
+                                    sorts</td>
                             </tr>
                             <tr>
                                 <td><strong>Coup critique</strong></td>
@@ -190,7 +202,7 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Se Défendre</h3>
                 <div class="table-container">
                     <table>
@@ -216,7 +228,7 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Protéger</h3>
                 <div class="table-container">
                     <table>
@@ -233,12 +245,13 @@
                             </tr>
                             <tr>
                                 <td><strong>Effet</strong></td>
-                                <td>Subit l'attaque à la place de la cible + prévient 1d4 (bouclier léger) ou 1d6 (bouclier lourd) bonus des dégâts en plus de sa propre défense</td>
+                                <td>Subit l'attaque à la place de la cible + prévient 1d4 (bouclier léger) ou 1d6
+                                    (bouclier lourd) bonus des dégâts en plus de sa propre défense</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                
+
                 <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Esquiver</h3>
                 <div class="table-container">
                     <table>
@@ -263,7 +276,7 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <h3 class="content-card-title" style="margin-top: var(--spacing-md);">KO</h3>
                 <div class="table-container">
                     <table>
@@ -284,7 +297,8 @@
                             </tr>
                             <tr>
                                 <td><strong>Malus après réanimation</strong></td>
-                                <td>-1 à tous les lancers offensifs et défensifs (maximum -3 si KO plusieurs fois)<br>-1 au déplacement jusqu'à la fin du combat</td>
+                                <td>-1 à tous les lancers offensifs et défensifs (maximum -3 si KO plusieurs fois)<br>-1
+                                    au déplacement jusqu'à la fin du combat</td>
                             </tr>
                             <tr>
                                 <td><strong>Fin de combat</strong></td>
@@ -293,10 +307,12 @@
                         </tbody>
                     </table>
                 </div>
-                
-                <h5 style="color: var(--color-accent); margin-bottom: 0; margin-top: 3rem; text-align: center;">Expériemental</h5>
+
+                <h5 style="color: var(--color-accent); margin-bottom: 0; margin-top: 3rem; text-align: center;">
+                    Expériemental</h5>
                 <h3 class="content-card-title">Combat de Boss</h3>
-                <p>Un joueur durant son tour va lancer 3D6 pour déterminer sa vigueur et obtiendra un nombre entre 3 et 18.</p>
+                <p>Un joueur durant son tour va lancer 3D6 pour déterminer sa vigueur et obtiendra un nombre entre 3 et
+                    18.</p>
                 <p>Suivant ce chiffre, il pourra réaliser une action supérieure ou égale à la vigueur obtenue :</p>
                 <div class="table-container">
                     <table>
@@ -375,4 +391,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

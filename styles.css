@@ -519,6 +519,10 @@ a, button, .btn {
     border: 2px solid transparent;
 }
 
+.feature-card p {
+    text-align: left;
+}
+
 .feature-icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-sm);
@@ -528,6 +532,25 @@ a, button, .btn {
     color: var(--color-dark);
     margin-bottom: var(--spacing-xs);
     font-family: var(--font-primary);
+}
+
+/* ============================================
+   FLEX ROW
+   ============================================ */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: var(--spacing-md);
 }
 
 /* ============================================
@@ -552,7 +575,7 @@ a, button, .btn {
 }
 
 .btn-primary:hover {
-    background: var(--color-white);
+    background: #fff;
     color: var(--color-accent);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
