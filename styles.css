@@ -413,6 +413,18 @@ a, button, .btn {
     text-align: justify;
 }
 
+.content-card .lore-list {
+    margin: 0 3rem var(--spacing-sm);
+    padding-left: 1.75rem;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.content-card .lore-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
 .content-card .lead {
     font-size: 1.5rem;
     font-weight: bold;
