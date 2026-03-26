@@ -5,21 +5,39 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
-    
-    if (navToggle) {
-        navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
+
+    function closeNav() {
+        if (!navMenu || !navToggle) return;
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+        document.documentElement.classList.remove('nav-open');
+    }
+
+    function toggleNav() {
+        if (!navMenu || !navToggle) return;
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+        document.documentElement.classList.toggle('nav-open', navMenu.classList.contains('active'));
+    }
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleNav();
         });
     }
-    
-    // Fermer le menu quand on clique sur un lien
+
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        });
+        link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeNav();
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) closeNav();
     });
 });
 
@@ -73,16 +91,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    /* threshold: 0 — une carte très haute (ex. toute la page Lore) ne dépassera jamais 10 % de
+       surface visible à l’écran ; avec 0.1 l’animation ne se déclenchait pas. */
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0,
+        rootMargin: '0px 0px -40px 0px'
     };
-    
+
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
