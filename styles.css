@@ -227,7 +227,7 @@ a, button, .btn {
    ============================================ */
 
 .hero {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -502,7 +502,7 @@ a, button, .btn {
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
 }
 
@@ -929,9 +929,21 @@ a, button, .btn {
     }
 }
 
+@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+    .nav-menu {
+        transition: none;
+    }
+}
+
 @media (max-width: 480px) {
+
+    .btn-secondary {
+        background: var(--color-white);
+        color: var(--color-dark);
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .section {
@@ -946,6 +958,21 @@ a, button, .btn {
     .content-card .lore-list {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+    }
+
+    .content-card p {
+        text-align: left;
+    }
+
+    .guide-card {
+        padding: 0 !important;
+    }
+
+    .guide-card li {
+        margin: 2rem 0 !important;
+        padding: 0 !important;
+        font-size: 1rem;
+        text-align: justify;
     }
 
     .guide-card {
@@ -983,12 +1010,6 @@ a, button, .btn {
     .nav-menu .nav-link {
         padding: var(--spacing-sm) var(--spacing-md);
         font-size: 1.05rem;
-    }
-}
-
-@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
-    .nav-menu {
-        transition: none;
     }
 }
 
