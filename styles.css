@@ -742,6 +742,11 @@ a, button, .btn {
         align-items: stretch;
     }
 
+    /* Permet au tableau interne de défiler sans forcer toute la colonne flex hors écran */
+    .flex-row > * {
+        min-width: 0;
+    }
+
     .flex-row img {
         max-width: min(100%, 420px);
         margin-left: auto;
@@ -1020,7 +1025,16 @@ a, button, .btn {
 /* Tableaux */
 .table-container {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
     margin: var(--spacing-md) 0;
+    overscroll-behavior-x: contain;
+}
+
+/* Largeur intrinsèque : pas de compression des colonnes sur mobile ; défilement horizontal dans .table-container */
+.table-container > table {
+    width: max-content;
+    min-width: 100%;
 }
 
 table {
@@ -1030,12 +1044,15 @@ table {
     box-shadow: var(--shadow-md);
     border-radius: var(--border-radius);
     overflow: hidden;
+    table-layout: auto;
 }
 
 th, td {
     padding: var(--spacing-sm);
     text-align: left;
     border-bottom: 1px solid var(--color-bg-alt);
+    vertical-align: top;
+    overflow-wrap: break-word;
 }
 
 th {
