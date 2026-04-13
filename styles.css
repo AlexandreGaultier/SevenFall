@@ -389,6 +389,14 @@ a, button, .btn {
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
     margin-bottom: var(--spacing-md);
+    min-width: 0;
+}
+
+/* Carte à côté d’une illustration : part du flex sur desktop, contrainte sur mobile */
+.content-card--split {
+    width: 75%;
+    max-width: 100%;
+    min-width: 0;
 }
 
 .content-card p {
@@ -532,7 +540,7 @@ a, button, .btn {
 }
 
 /* ============================================
-   FLEX ROW
+   FLEX ROW & FLEX COLUMN
    ============================================ */
 
 .flex-row {
@@ -543,6 +551,27 @@ a, button, .btn {
 }
 
 .flex-row img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: var(--spacing-md);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-column > * {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.flex-column img {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -752,6 +781,16 @@ a, button, .btn {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .content-card--split {
+        width: 100%;
+    }
+
+    .flex-column img {
+        max-width: min(100%, 420px);
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .section-title {
         font-size: 2.15rem;
@@ -876,16 +915,15 @@ a, button, .btn {
         font-size: 2rem;
     }
 
-    .content-card[style*="width: 75%"],
-    .content-card[style*="width:75%"] {
-        width: 100% !important;
-        max-width: 100%;
-    }
-
     .content-card p,
     .content-card .lore-list {
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .content-card p strong {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
     .features-grid {
@@ -1026,6 +1064,7 @@ a, button, .btn {
 .table-container {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    width: 100%;
     max-width: 100%;
     margin: var(--spacing-md) 0;
     overscroll-behavior-x: contain;
