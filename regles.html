@@ -94,53 +94,54 @@
             <h2 class="section-title">Attributs</h2>
             <div class="flex-row">
                 <img src="./assets/images/Lame Littanie.png" alt="Lame-Litanie" class="hero-characters">
-            <div class="content-card" style="width: 75%;">
-                <p style="text-align: center; margin-bottom: var(--spacing-md);">Chaque personnage possède des attributs
-                    :
-                    <br>
-                    <strong style="font-size: 1.2rem; text-transform: uppercase;">Puissance, Agilité, Vaillance,
-                        Instinct et Savoir</strong>.
-                </p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Attribut</th>
-                                <th>Description</th>
-                                <th>Extensions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>PUISSANCE (PUI)<br></strong></td>
-                                <td>Puissance physique, effort brut</td>
-                                <td>Athlétisme, Domination, Endurance brute</td>
-                            </tr>
-                            <tr>
-                                <td><strong>AGILITÉ (AGI)<br></strong></td>
-                                <td>Agilité, précision, vitesse</td>
-                                <td>Acrobaties, Discrétion, Précision</td>
-                            </tr>
-                            <tr>
-                                <td><strong>VAILLANCE (VAI)<br></strong></td>
-                                <td>Résistance, santé, ténacité</td>
-                                <td>Résistance, Tenacité, Survie</td>
-                            </tr>
-                            <tr>
-                                <td><strong>INSTINCT (INS)<br></strong></td>
-                                <td>Instinct, perception, lien au monde</td>
-                                <td>Perception, Instinct, Spiritualité</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Intelligence (INT)<br></strong></td>
-                                <td>Connaissance, logique, magie</td>
-                                <td>Savoir, Analyse, Arcanes</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="content-card" style="width: 75%;">
+                    <p style="text-align: center; margin-bottom: var(--spacing-md);">Chaque personnage possède des
+                        attributs
+                        :
+                        <br>
+                        <strong style="font-size: 1.2rem; text-transform: uppercase;">Puissance, Agilité, Vaillance,
+                            Instinct et Savoir</strong>.
+                    </p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Attribut</th>
+                                    <th>Description</th>
+                                    <th>Extensions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>PUISSANCE (PUI)<br></strong></td>
+                                    <td>Puissance physique, effort brut</td>
+                                    <td>Athlétisme, Domination, Endurance brute</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>AGILITÉ (AGI)<br></strong></td>
+                                    <td>Agilité, précision, vitesse</td>
+                                    <td>Acrobaties, Discrétion, Précision</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VAILLANCE (VAI)<br></strong></td>
+                                    <td>Résistance, santé, ténacité</td>
+                                    <td>Résistance, Tenacité, Survie</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>INSTINCT (INS)<br></strong></td>
+                                    <td>Instinct, perception, lien au monde</td>
+                                    <td>Perception, Instinct, Spiritualité</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intelligence (INT)<br></strong></td>
+                                    <td>Connaissance, logique, magie</td>
+                                    <td>Savoir, Analyse, Arcanes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Section Combat -->
@@ -162,7 +163,12 @@
                         <tbody>
                             <tr>
                                 <td><strong>Gratuit : Déplacement court </strong></td>
-                                <td>Se déplacer sur une distance de moyenne distance ou moins</td>
+                                <td>Se déplacer sur une distance de <strong>moyenne distance ou moins</strong>.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Déplacement long</strong></td>
+                                <td>Se déplacer sur une distance supérieure de <strong>moyenne distance</strong> à
+                                    <strong>longue portée</strong>.</td>
                             </tr>
                             <tr>
                                 <td><strong>Attaquer / Lancer un sort</strong></td>
@@ -184,7 +190,46 @@
                     </table>
                 </div>
 
-                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Attaquer</h3>
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Déplacement</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Déplacement court</strong></td>
+                                <td>Se déplacer sur une distance de <strong>moyenne distance ou moins</strong>.
+                                    <br>Ce déplacement est <strong>gratuit</strong>.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Déplacement Longue distance</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Action</strong></td>
+                                <td>Dépenser son tour pour se déplacer sur une distance supérieure de <strong>moyenne
+                                        distance</strong> à <strong>longue distance</strong>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Attaquer / Lancer un sort</h3>
                 <div class="table-container">
                     <table>
                         <thead>
@@ -196,16 +241,16 @@
                         <tbody>
                             <tr>
                                 <td><strong>Attribut utilisé</strong></td>
-                                <td><strong>PUISSANCE</strong> pour les armes, <strong>INTELLIGENCE</strong> pour les
+                                <td>Ajouter la valeur de l'attribut <strong>PUISSANCE</strong> pour les armes, <strong>INTELLIGENCE</strong> pour les
                                     sorts</td>
                             </tr>
                             <tr>
                                 <td><strong>Coup critique</strong></td>
-                                <td>Dé max : bonus décidé par le MJ (dégât bonus, brûlure, saignement, etc.)</td>
+                                <td>Dé maximum : bonus décidé par le MJ (dégât bonus, brûlure, repousse, étourdissement, etc.)</td>
                             </tr>
                             <tr>
                                 <td><strong>Échec critique</strong></td>
-                                <td>Dé à 1 : malus décidé par le MJ (opportunité à l'ennemi, malus de dé, etc.)</td>
+                                <td>Dé minimum : malus décidé par le MJ (opportunité à l'ennemi, malus de dé, malus de dégâts, attaque sur allié, etc.)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -222,16 +267,29 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td><strong>Si le joueur possède un bouclier :</strong></td>
+                                <td>Il peut changer sa position gratuitement : <strong>défensive</strong> ou
+                                    <strong>offensive</strong>.
+                                    <br><br>
+                                    <strong>Défensive :</strong>S'il subit une attaque, il ajoutera le bonus de défense
+                                    du bouclier (lourd ou léger) à sa défense.
+                                    <br> Cependant, il aura un malus de -3 dégâts à ses attaques.
+                                    <br><br>
+                                    <strong>Offensive :</strong> Le joueur peut attaquer normalement mais n'aura pas de
+                                    bonus de défense.
+
+                                    <br><br>
+                                    La posisition une fois choisie est valable jusqu'à ce que le joueur change de
+                                    position.
+                                </td>
+                            </tr>
+                            <tr>
                                 <td><strong>Bouclier léger</strong></td>
-                                <td>Lance 1d2 à soustraire aux dégâts + DEF de base + DEF de l'armure</td>
+                                <td>Lance <strong>1d2</strong> à soustraire aux dégâts</td>
                             </tr>
                             <tr>
                                 <td><strong>Bouclier lourd</strong></td>
-                                <td>Lance 1d4 à soustraire aux dégâts + DEF de base + DEF de l'armure</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Sans bouclier</strong></td>
-                                <td>Soustrait uniquement la DEF de base + DEF de l'armure</td>
+                                <td>Lance <strong>1d4</strong> à soustraire aux dégâts</td>
                             </tr>
                         </tbody>
                     </table>
@@ -249,12 +307,38 @@
                         <tbody>
                             <tr>
                                 <td><strong>Action</strong></td>
-                                <td>Dépenser son tour pour protéger un allié</td>
+                                <td>Dépenser son tour pour protéger un allié si le joueur n'a pas déjà joué depuis le
+                                    début du round.</td>
                             </tr>
                             <tr>
                                 <td><strong>Effet</strong></td>
-                                <td>Subit l'attaque à la place de la cible + prévient 1d4 (bouclier léger) ou 1d6
-                                    (bouclier lourd) bonus des dégâts en plus de sa propre défense</td>
+                                <td>Subit l'attaque à la place de la cible + lancer 1d20. <br> <strong>8 ou -</strong> :
+                                    subit 1d4 de dégâts bonus. <br> <strong>9-15</strong> : pas de bonus ni de malus.
+                                    <br> <strong>16 ou +</strong> : subit 1d4 de dégâts malus.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Soigner</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Action</strong></td>
+                                <td>Dépenser son tour pour soigner un allié</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Effet</strong></td>
+                                <td>Par le biais d'un objet ou d'un sort de soin, soigne le montant indiqué de PV à un
+                                    allié</td>
                             </tr>
                         </tbody>
                     </table>
@@ -262,6 +346,23 @@
 
                 <h3 class="content-card-title" style="margin-top: var(--spacing-md);">Esquiver</h3>
                 <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Élément</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Lorsqu'un joueur est attaqué</strong></td>
+                                <td>Si le joueur possède une armure lui permettant d'esquiver, il peut lancer
+                                    <strong>1d6</strong>.
+                                    <br> S'il réussit les <strong>conditions d'esquive</strong>, il esquive l'attaque et
+                                    ne prends aucun dégâts.
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+
                     <table>
                         <thead>
                             <tr>
@@ -284,76 +385,36 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
 
-                <h3 class="content-card-title" style="margin-top: var(--spacing-md);">KO</h3>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>État</th>
-                                <th>Effet</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>À 0 PV</strong></td>
-                                <td>KO : ne peut plus jouer lors de ses tours</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Réanimation</strong></td>
-                                <td>Possible avec un soin (objet ou sort)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Malus après réanimation</strong></td>
-                                <td>-1 à tous les lancers offensifs et défensifs (maximum -3 si KO plusieurs fois)<br>-1
-                                    au déplacement jusqu'à la fin du combat</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Fin de combat</strong></td>
-                                <td>Tous les malus sont retirés</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h5 style="color: var(--color-accent); margin-bottom: 0; margin-top: 3rem; text-align: center;">
-                    Expériemental</h5>
-                <h3 class="content-card-title">Combat de Boss</h3>
-                <p>Un joueur durant son tour va lancer 3D6 pour déterminer sa vigueur et obtiendra un nombre entre 3 et
-                    18.</p>
-                <p>Suivant ce chiffre, il pourra réaliser une action supérieure ou égale à la vigueur obtenue :</p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Total 3D6</th>
-                                <th>Actions disponibles</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>3–5</td>
-                                <td>Repositionnement + objet</td>
-                            </tr>
-                            <tr>
-                                <td>6–8</td>
-                                <td>Protéger / Soin</td>
-                            </tr>
-                            <tr>
-                                <td>9–14</td>
-                                <td>Attaque ou Sort / Soin</td>
-                            </tr>
-                            <tr>
-                                <td>15–17</td>
-                                <td>Attaque ou sort x2</td>
-                            </tr>
-                            <tr>
-                                <td>18</td>
-                                <td>Attaque x3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <h3 class="content-card-title" style="margin-top: var(--spacing-md);">KO</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>État</th>
+                            <th>Effet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>À 0 PV</strong></td>
+                            <td>KO : ne peut plus jouer lors de ses tours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Réanimation</strong></td>
+                            <td>Possible avec un soin (objet ou sort)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Malus après réanimation</strong></td>
+                            <td>-1 à tous les lancers offensifs et défensifs (maximum -3 si KO plusieurs fois).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fin de combat</strong></td>
+                            <td>Tous les malus sont retirés</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
