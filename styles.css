@@ -1104,6 +1104,68 @@ tr:hover {
     background: var(--color-bg-alt);
 }
 
+/* Tableau des sorts (page Classes) : sections Dégâts / Soins / Buffs */
+table.spell-table thead th {
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    border-bottom: 2px solid rgba(44, 48, 64, 0.12);
+}
+
+table.spell-table tbody tr.spell-table-section,
+table.spell-table tbody tr.spell-table-section:hover {
+    background: transparent;
+}
+
+table.spell-table tbody tr.spell-table-section td {
+    text-align: center;
+    padding: 0.55rem var(--spacing-md);
+    font-family: var(--font-primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    border-bottom: 1px solid rgba(44, 48, 64, 0.06);
+}
+
+table.spell-table tbody tr.spell-table-section td strong {
+    font-weight: 700;
+}
+
+table.spell-table tbody tr.spell-table-section--damage td {
+    background: linear-gradient(
+        105deg,
+        rgba(196, 92, 74, 0.16) 0%,
+        rgba(244, 200, 159, 0.28) 55%,
+        rgba(255, 247, 237, 0.4) 100%
+    );
+    box-shadow: inset 4px 0 0 0 rgba(196, 92, 74, 0.55);
+}
+
+table.spell-table tbody tr.spell-table-section--healing td {
+    background: linear-gradient(
+        105deg,
+        rgba(72, 130, 118, 0.14) 0%,
+        rgba(200, 228, 212, 0.25) 50%,
+        rgba(255, 247, 237, 0.45) 100%
+    );
+    box-shadow: inset 4px 0 0 0 rgba(72, 130, 118, 0.5);
+}
+
+table.spell-table tbody tr.spell-table-section--buff td {
+    background: linear-gradient(
+        105deg,
+        rgba(59, 82, 122, 0.14) 0%,
+        rgba(184, 198, 224, 0.22) 48%,
+        rgba(252, 248, 218, 0.35) 100%
+    );
+    box-shadow: inset 4px 0 0 0 rgba(59, 82, 122, 0.5);
+}
+
+table.spell-table tbody tr.spell-table-section:hover td {
+    filter: brightness(0.96);
+}
+
 /* Fiches personnages */
 .character-sheet {
     background: var(--color-white);

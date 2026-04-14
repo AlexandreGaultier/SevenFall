@@ -77,7 +77,7 @@
                             <td><strong>Fendeur de Brume</strong></td>
                             <td>1d8 + 6</td>
                             <td>+1</td>
-                            <td>Épées, Dague, Hache, arcs, Arbalètes, Rapière, Javelot</td>
+                            <td>Épées, Dague, Hache, Arcs, Arbalètes, Rapière, Javelot</td>
                             <td>Tissu, Cuir + <strong>boucliers légers</strong></td>
                             <td>DPS agile</td>
                         </tr>
@@ -93,7 +93,7 @@
                             <td><strong>Marche-Rêve</strong></td>
                             <td>1d4 + 6</td>
                             <td>+1</td>
-                            <td>Serpes, Dague, Sorts (bonus d'INT sur les sorts de soins), Arc</td>
+                            <td>Serpes, Dague, Sorts (bonus d'INT sur les sorts de soins), Arcs</td>
                             <td>Tissu, Cuir</td>
                             <td>Soin / contrôle</td>
                         </tr>
@@ -109,10 +109,10 @@
                             <td><strong>Rôdeur</strong></td>
                             <td>1d4 + 6</td>
                             <td>+1</td>
-                            <td>Arcs, Javelots, Arbalètes, Épée, Dague, Compétence "Marque"
+                            <td>Arcs, Javelots, Arbalètes, Épée, Dague, Compétence "Marque du chasseur" (peut être lancée deux fois)
                                 <p
                                     style="color: var(--color-accent); font-size: 0.8rem; font-weight: bold; margin-bottom: var(--spacing-sm);">
-                                    +1 dégat sur arme à distance</p>
+                                    +2 dégat sur arme à distance</p>
                             </td>
                             <td>Tissu, Cuir</td>
                             <td>Distance / soutien offensif</td>
@@ -125,7 +125,7 @@
                             </td>
                             <td>1d4 + 6</td>
                             <td>+1</td>
-                            <td>Serpes, Dagues, épée à une main, rapière, arbalètes</td>
+                            <td>Serpes, Dagues, Epée à une main, Rapière, Arc court, Arbalètes</td>
                             <td>Tissu, Cuir</td>
                             <td>DPS furtif</td>
                         </tr>
@@ -137,11 +137,11 @@
                             </td>
                             <td>1d4 + 6</td>
                             <td>+0</td>
-                            <td>à venir</td>
+                            <td>Invocations (à venir)</td>
                             <td>Tissu</td>
-                            <td>Invocateur</td>
+                            <td>Invocateur / soutien</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td><strong>Archiviste Obsidien</strong>
                                 <p
                                     style="color: var(--color-accent); font-size: 0.8rem; font-weight: bold; margin-bottom: var(--spacing-sm);">
@@ -152,7 +152,7 @@
                             <td>à venir</td>
                             <td>Tissu, Cuir</td>
                             <td>Débuff / invocation</td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td><strong>Voiliste Écarlate</strong>
                                 <p
@@ -161,9 +161,9 @@
                             </td>
                             <td>1d4 + 6</td>
                             <td>+0</td>
-                            <td>à venir</td>
+                            <td>Serpes, Dague, Rapières, Sorts de Buffs et Debuffs</td>
                             <td>Tissu</td>
-                            <td>Support / debuff émotionnel</td>
+                            <td>Support / buffs et debuffs</td>
                         </tr>
                     </tbody>
                 </table>
@@ -272,10 +272,10 @@
                             <td style="text-align: center;" colspan="4"><strong>Distance</strong></td>
                         </tr>
                         <tr>
-                            <td><strong>Arc (à deux mains)</strong></td>
+                            <td><strong>Arc court (à deux mains)</strong></td>
                             <td>1</td>
                             <td>1d6</td>
-                            <td>Si distance > 9m : -1 dégât. Si distance > 16m : -2 dégât.</td>
+                            <td>Si cible est à longue portée : -2 dégât.</td>
                             <td><strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> distance
                             </td>
                         </tr>
@@ -313,25 +313,27 @@
         <div class="container">
             <h2 class="section-title">Sorts</h2>
             <div class="table-container">
-                <table>
+                <table class="spell-table">
                     <thead>
                         <tr>
                             <th>Nom</th>
                             <th>Dégâts / Soin</th>
                             <th>Modificateur</th>
+                            <th>Effet</th>
                             <th>Portée</th>
                             <th>Temps de récupération</th>
                             <th>Niveau</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td style="text-align: center;" colspan="4"><strong>Dégâts</strong></td>
+                        <tr class="spell-table-section spell-table-section--damage">
+                            <td colspan="3"><strong>Dégâts</strong></td>
                         </tr>
                         <tr>
                             <td><strong>Flammèche</strong></td>
                             <td>1d4</td>
                             <td>+2 dégâts</td>
+                            <td>—</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> portée</td>
                             <td>0 tours</td>
                             <td>1</td>
@@ -340,15 +342,16 @@
                             <td><strong>Boule de feu</strong></td>
                             <td>1d10</td>
                             <td>+3 dégâts</td>
-                            <td><strong></strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong>
-                                portée</td>
+                            <td>—</td>
+                            <td><strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>4 tours</td>
                             <td>1</td>
                         </tr>
                         <tr>
                             <td><strong>Frappe aquatique</strong></td>
                             <td>1d6</td>
-                            <td>+1 dégât et applique l'effet <strong>sonné</strong> (cible perd son action) sur 6.</td>
+                            <td>+1 dégât</td>
+                            <td>Applique l'effet <strong>sonné</strong> (cible perd son action) sur 6.</td>
                             <td><strong>Courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>1 tour</td>
                             <td>1</td>
@@ -356,7 +359,8 @@
                         <tr>
                             <td><strong>Stalagmite de glace</strong></td>
                             <td>1d8</td>
-                            <td>+1 dégât et traverse armure de cuir comme le ferai une flèche</td>
+                            <td>+1 dégât</td>
+                            <td>Traverse armure de cuir comme le ferai une flèche</td>
                             <td><strong>Courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>3 tours</td>
                             <td>1</td>
@@ -364,7 +368,8 @@
                         <tr>
                             <td><strong>Pilier de roche</strong></td>
                             <td>1d4</td>
-                            <td>+2 dégâts et applique l'effet <strong>sonné</strong> (cible perd son action) sur 6.</td>
+                            <td>+2 dégâts</td>
+                            <td>Applique l'effet <strong>sonné</strong> (cible perd son action) sur 6.</td>
                             <td><strong>Courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>0 tours</td>
                             <td>1</td>
@@ -372,7 +377,8 @@
                         <tr>
                             <td><strong>Cercueil de pierre</strong></td>
                             <td>1d6</td>
-                            <td>+ 2 dégâts, la cible est piégée pendant 1 tour si sa taille est inférieure à 2m.</td>
+                            <td>+ 2 dégâts</td>
+                            <td>La cible est <strong>strong>piégée</strong> pendant 1 tour si sa taille est inférieure à 2m.</td>
                             <td><strong>Courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>3 tours</td>
                             <td>1</td>
@@ -380,7 +386,8 @@
                         <tr>
                             <td><strong>Éclair</strong></td>
                             <td>1d8</td>
-                            <td>+1 dégât et +1 dégât contre armure de fer et cotte de mailles</td>
+                            <td>+1 dégât</td>
+                            <td>+1 dégât contre armure de fer et cotte de mailles</td>
                             <td><strong>Moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>3 tours</td>
                             <td>1</td>
@@ -388,7 +395,8 @@
                         <tr>
                             <td><strong>Chaîne d'éclair</strong></td>
                             <td>1d4</td>
-                            <td>+2 dégâts et +1 dégât contre armure de fer et
+                            <td>+2 dégâts</td>
+                            <td>+1 dégât contre armure de fer et
                                 cotte de mailles. Si dégâts >= 2, touche également ennemis à moins de 5m de la cible initiale. </td>
                             <td><strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>2 tours</td>
@@ -398,18 +406,19 @@
                             <td><strong>Trait arcanique</strong></td>
                             <td>1d6</td>
                             <td>+1 dégât</td>
-                            <td><strong>CaC</strong>, <strong>courte</strong>, <strong>moyenne</strong> et
-                                <strong>longue</strong> portée</td>
+                            <td>—</td>
+                            <td><strong>CaC</strong>, <strong>courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>1 tour</td>
                             <td>1</td>
                         </tr>
-                        <tr>
-                            <td style="text-align: center;" colspan="4"><strong>Soins</strong></td>
+                        <tr class="spell-table-section spell-table-section--healing">
+                            <td colspan="3"><strong>Soins</strong></td>
                         </tr>
                         <tr>
                             <td><strong>Soin ciblé</strong></td>
                             <td>1d6</td>
                             <td>+2 soins à un allié</td>
+                            <td>—</td>
                             <td><strong>Courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>2 tours</td>
                             <td>1</td>
@@ -418,6 +427,7 @@
                             <td><strong>Soin collectif</strong></td>
                             <td>1d4</td>
                             <td>+2 soins à plusieurs alliés</td>
+                            <td>—</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>4 tours</td>
                             <td>1</td>
@@ -426,6 +436,7 @@
                             <td><strong>Soin concentré ciblé</strong></td>
                             <td>1d10</td>
                             <td>+3 soins à un allié</td>
+                            <td>—</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>6 tours</td>
                             <td>2</td>
@@ -433,17 +444,19 @@
                         <tr>
                             <td><strong>Soin de distance</strong></td>
                             <td>1d4</td>
-                            <td>+2 soins à un allié, Portée max 16m</td>
+                            <td>—</td>
+                            <td>+2 soins à un allié</td>
                             <td><strong>Moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>3 tours</td>
                             <td>2</td>
                         </tr>
-                        <tr>
-                            <td style="text-align: center;" colspan="4"><strong>Buffs et Debuffs</strong></td>
+                        <tr class="spell-table-section spell-table-section--buff">
+                            <td colspan="3"><strong>Buffs et Debuffs</strong></td>
                         </tr>
                         <tr>
                             <td><strong>Gel</strong></td>
                             <td>1 dégât</td>
+                            <td>—</td>
                             <td>Réduit la dextérité des cibles à -1 point sur une zone de 5m de rayon. Lancer 1d6 : sur 6, immobilise la cible pendant 1 tour.</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>3 tours</td>
@@ -451,6 +464,7 @@
                         </tr>
                         <tr>
                             <td><strong>Echange arcanique</strong></td>
+                            <td>—</td>
                             <td>—</td>
                             <td>Permet d'échanger de place avec un allié ou un ennemi à portée</td>
                             <td><strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
@@ -460,14 +474,16 @@
                         <tr>
                             <td><strong>Transfert arcanique</strong></td>
                             <td>—</td>
+                            <td>—</td>
                             <td>Permet d'échanger de place une cible avec un allié ou un ennemi à portée</td>
                             <td><strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>5 tours</td>
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td><strong>Armure magique de roches</strong></td>
+                            <td><strong>Armure magique</strong></td>
                             <td>1d4</td>
+                            <td>—</td>
                             <td>Ajoute 1d4 de DEF lors de la prochaine attaque subie</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>3 tours</td>
@@ -475,6 +491,7 @@
                         </tr>
                         <tr>
                             <td><strong>Barrière élémentaire</strong></td>
+                            <td>—</td>
                             <td>—</td>
                             <td>Crée une barrière élémentaire (feu, glace, terre, air) devant l'utilisateur pendant 2 tour</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> et <strong>moyenne</strong> portée</td>
@@ -484,6 +501,7 @@
                         <tr>
                             <td><strong>Surcharge</strong></td>
                             <td>—</td>
+                            <td>—</td>
                             <td>Applique l'effet <strong>surchargé</strong> : La prochaine attaque d'un allié ciblée fera 1,5 fois les dégâts.</td>
                             <td><strong>CaC</strong>, <strong>courte</strong> et <strong>moyenne</strong> portée</td>
                             <td>3 tours</td>
@@ -492,13 +510,15 @@
                         <tr>
                             <td><strong>Vigueur</strong></td>
                             <td>1d6</td>
-                            <td>Donne temporairement un bonus de point de vie à un allié pendant son tour</td>
+                            <td>—</td>
+                            <td>Donne temporairement un bonus de point de vie (dépassant la limite de PV Max) à un allié</td>
                             <td><strong>CaC</strong>, <strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
                             <td>2 tours</td>
                             <td>2</td>
                         </tr>
                         <tr>
                             <td><strong>Marque magique</strong></td>
+                            <td>—</td>
                             <td>—</td>
                             <td>Applique l'effet <strong>marqué</strong> : La cible prend +5 dégâts lors de la prochaine attaque magique subie.</td>
                             <td> <strong>CaC</strong>, <strong>Courte</strong>, <strong>moyenne</strong> et <strong>longue</strong> portée</td>
@@ -520,7 +540,7 @@
                     <thead>
                         <tr>
                             <th>Nom</th>
-                            <th>Description</th>
+                            <th>Effet</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -532,6 +552,72 @@
                             <td><strong>Focus</strong></td>
                             <td>Applique l'effet <strong>focus</strong> : La cible ajoutera +2 dégâts lors de sa prochaine attaque.</td>
                         </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tableau des Invocations -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Invocations</h2>
+            <p style="font-size: 1.2rem; text-align: center; margin-bottom: var(--spacing-md);">Les invocations sont des créatures magiques qui peuvent être invoquées par le joueur pour l'aider dans le combat. Il ne peut y avoir que 3 invocations invoquées à la fois.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Invocation</th>
+                            <th>PV</th>
+                            <th>Dégâts</th>
+                            <th>Effet</th>
+                            <th>Temps de récupération</th>
+                            <th>Niveau</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                    </tbody>
+                    <tr>
+                        <td><strong>Corbeau</strong></td>
+                        <td>3</td>
+                        <td>1d4</td>
+                        <td>Capacité : L'oiseau plonge sur une cible à portée et fait 4 dégâts + 1d6 mais meurs sur le coup</td>
+                        <td>1 tours</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>    
+                        <td><strong>Chauve-souris spectrale</strong></td>
+                        <td>2</td>
+                        <td>1d4</td>
+                        <td>Capacité : La chauve-souris vole 2 points de vie à une cible et les distribue à un allié à Moyenne portée.</td>
+                        <td>2 tours</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>    
+                        <td><strong>Coyote de feu</strong></td>
+                        <td>6</td>
+                        <td>1d6 + 1d6</td>
+                        <td>—</td>
+                        <td>5 tours</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>    
+                        <td><strong>Cerf végétal éblouissant</strong></td>
+                        <td>12</td>
+                        <td>—</td>
+                        <td>Capacité : Soin collectif à une cible à Moyenne portée : 1d4 + 2 soins dans un rayon Moyenne portée</td>
+                        <td>5 tours</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>    
+                        <td><strong>Taupe vénéneuse</strong></td>
+                        <td>4</td>
+                        <td>—</td>
+                        <td>Capacité : La taupe injecte un venin dans une cible à Courte portée. La cible doit faire un jet de sauvegarde de Constitution contre le poison. Si elle rate, elle prend 2 dégâts de poison et est paralysée pour 1 tour.</td>
+                        <td>3 tours</td>
+                        <td>1</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -632,13 +718,13 @@
                     <p>Invocateur mystique. Contrôle le champ de bataille avec ses invocations.</p>
                 </div>
 
-                <div class="feature-card">
+                <!-- <div class="feature-card">
                     <h3>Archiviste Obsidien</h3>
                     <p
                         style="color: var(--color-accent); font-size: 0.8rem; font-weight: bold; margin-bottom: var(--spacing-sm);">
                         à venir</p>
                     <p>Nécromancien. Débuffs et invocations de morts-vivants.</p>
-                </div>
+                </div> -->
 
                 <div class="feature-card">
                     <h3>Voiliste Écarlate</h3>
