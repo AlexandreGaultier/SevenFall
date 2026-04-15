@@ -539,27 +539,28 @@ a, button, .btn {
     font-family: var(--font-primary);
 }
 
-/* Desktop : 4 vignettes sur une seule ligne */
-.hero-characters-exemple-container {
-    display: flex;
-    flex-wrap: nowrap;
+/* Desktop : grille 2x2 (images plus grandes) */
+.hero-characters-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    align-items: flex-end;
+    align-items: start;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-md);
-    width: 100%;
+    width: min(100%, 78rem);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.hero-characters-exemple-item {
-    flex: 1 1 0;
-    min-width: 0;
+.hero-characters-image-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    min-width: 0;
 }
 
-.hero-characters-exemple-name {
+.hero-characters-image-name {
     font-family: var(--font-primary);
     font-size: clamp(0.8rem, 1.05vw, 1.05rem);
     font-weight: 600;
@@ -569,45 +570,37 @@ a, button, .btn {
     letter-spacing: 0.02em;
 }
 
-.hero-characters-exemple {
+.hero-characters-image {
     width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
     border-radius: var(--border-radius-lg);
     transition: var(--transition);
 }
 
-.hero-characters-exemple:hover {
+.hero-characters-image:hover {
     transform: scale(1.05);
 }
 
 /* Tablette : grille 2×2 équilibrée */
 @media (max-width: 1024px) {
-    .hero-characters-exemple-container {
-        display: grid;
+    .hero-characters-image-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
         align-items: start;
-        max-width: 56rem;
-        margin-left: auto;
-        margin-right: auto;
+        width: min(100%, 56rem);
     }
 
-    .hero-characters-exemple-item {
-        flex: unset;
-        width: 100%;
-    }
-
-    .hero-characters-exemple-name {
+    .hero-characters-image-name {
         font-size: clamp(0.9rem, 2.2vw, 1.05rem);
     }
 }
 
 /* Téléphone : une colonne, un peu plus d’air entre les cartes */
 @media (max-width: 480px) {
-    .hero-characters-exemple-container {
+    .hero-characters-image-container {
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -615,12 +608,12 @@ a, button, .btn {
         max-width: none;
     }
 
-    .hero-characters-exemple {
+    .hero-characters-image {
         max-width: 100%;
         width: 100%;
     }
 
-    .hero-characters-exemple:hover {
+    .hero-characters-image:hover {
         transform: none;
     }
 }
