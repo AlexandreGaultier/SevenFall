@@ -96,6 +96,31 @@ function slugifyHeading(text) {
     return slug;
 }
 
+function getQuickNavHeadings() {
+    const page = window.location.pathname.toLowerCase();
+
+    let selector = 'h2.section-title';
+
+    if (page.includes('monstres.html')) {
+        selector = 'h2.monster-title, h2.section-title';
+    } else if (page.includes('lore.html')) {
+        selector = 'h2.content-card-title, h2.section-title';
+    } else if (page.includes('personnages.html')) {
+        selector = 'h2.content-card-title, h2.section-title';
+    } else if (page.includes('classes.html')) {
+        selector = 'h2.section-title';
+    } else if (page.includes('regles.html')) {
+        selector = 'h2.section-title';
+    } else {
+        selector = 'h2.section-title, h2.monster-title, h2.content-card-title';
+    }
+
+    return Array.from(document.querySelectorAll(selector)).filter(heading => {
+        const headingText = (heading.textContent || '').trim();
+        return headingText.length > 0;
+    });
+}
+
 // ============================================
 // BOUTON RETOUR EN HAUT
 // ============================================
@@ -138,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    const headings = Array.from(document.querySelectorAll('h2.section-title'));
+    const headings = getQuickNavHeadings();
     if (headings.length === 0) return;
 
     const usedIds = new Set(

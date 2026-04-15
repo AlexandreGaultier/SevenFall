@@ -863,7 +863,7 @@ a, button, .btn {
     right: var(--spacing-md);
     transform: translateY(-50%);
     z-index: 1120;
-    width: min(260px, 22vw);
+    width: min(210px, 17vw);
     max-height: 72vh;
     overflow-y: auto;
     background: rgba(27, 30, 43, 0.9);
