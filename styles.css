@@ -802,6 +802,9 @@ a, button, .btn {
     bottom: var(--spacing-md);
     right: var(--spacing-md);
     z-index: 1150;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .music-btn {
@@ -830,6 +833,88 @@ a, button, .btn {
     animation: pulse 2s infinite;
 }
 
+.scroll-top-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px) scale(0.95);
+}
+
+.scroll-top-btn.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+}
+
+.scroll-top-btn .scroll-top-icon {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-dark);
+}
+
+/* ============================================
+   MENU FLOTTANT H2 (DESKTOP)
+   ============================================ */
+
+.floating-h2-nav {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: var(--spacing-md);
+    transform: translateY(-50%);
+    z-index: 1120;
+    width: min(260px, 22vw);
+    max-height: 72vh;
+    overflow-y: auto;
+    background: rgba(27, 30, 43, 0.9);
+    border: 1px solid rgba(244, 200, 159, 0.35);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: var(--spacing-sm);
+}
+
+.floating-h2-nav-title {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid rgba(244, 200, 159, 0.25);
+}
+
+.floating-h2-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.floating-h2-nav-link {
+    display: block;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.35;
+    padding: 0.45rem 0.6rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.floating-h2-nav-link:hover {
+    color: var(--color-light);
+    background: rgba(244, 200, 159, 0.14);
+}
+
+.floating-h2-nav-link.is-active {
+    color: var(--color-light);
+    background: rgba(59, 82, 122, 0.9);
+    border-left: 3px solid var(--color-primary);
+}
+
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -845,6 +930,10 @@ a, button, .btn {
 
 /* Tablette : colonnes et images */
 @media (max-width: 1024px) {
+    .floating-h2-nav {
+        display: none !important;
+    }
+
     .flex-row {
         flex-direction: column;
         align-items: stretch;
@@ -873,6 +962,12 @@ a, button, .btn {
 
     .section-title {
         font-size: 2.15rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .floating-h2-nav {
+        display: block;
     }
 }
 
